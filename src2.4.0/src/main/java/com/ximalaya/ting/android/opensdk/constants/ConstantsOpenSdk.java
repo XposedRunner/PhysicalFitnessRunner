@@ -1,0 +1,45 @@
+package com.ximalaya.ting.android.opensdk.constants;
+
+public class ConstantsOpenSdk {
+    public static final String MAIN_COMMONREQUESTM = "com.ximalaya.ting.android.host.manager.request.CommonRequestM";
+    public static String OPEN_APP_ACTION = "iting://open";
+    public static final String PAUSE_PLAYER_ACTION = "com.ximalaya.ting.android.ACTION_PLAY_PAUSE";
+    public static final String PLAN_PLAY_STOP_SELECTED_INDEX = "delay_minutes_index";
+    public static final String PLAN_PLAY_STOP_SWITCH = "isOnForPlan";
+    public static final String PLAN_PLAY_STOP_TIME = "plan_play_stop_time";
+    public static final int PLAY_FROM_ACTIVITY = 19;
+    public static final int PLAY_FROM_ALBUM_RECOMMEND = 22;
+    public static final int PLAY_FROM_BARRAGE = 2;
+    public static final int PLAY_FROM_DOWNLOAD_ALBUM = 16;
+    public static final int PLAY_FROM_DOWNLOAD_SOUND = 17;
+    public static final int PLAY_FROM_FEED = 6;
+    public static final int PLAY_FROM_FEED_RECOMMEND = 1;
+    public static final int PLAY_FROM_FIND_ANCHOR = 12;
+    public static final int PLAY_FROM_FIND_CLASSIFICATION = 10;
+    public static final int PLAY_FROM_FIND_FOCUS_MAP = 11;
+    public static final int PLAY_FROM_FIND_GUESS_YOU_LIKE = 26;
+    public static final int PLAY_FROM_FIND_RECOMMEND = 15;
+    public static final int PLAY_FROM_LISTEN_HEAD_LINE = 32;
+    public static final int PLAY_FROM_LISTEN_LIST = 14;
+    public static final int PLAY_FROM_NONE = 0;
+    public static final int PLAY_FROM_NOVELTY = 8;
+    public static final int PLAY_FROM_ONE_KEY_PLAY = 31;
+    public static final int PLAY_FROM_OTHER = 99;
+    public static final int PLAY_FROM_PAY2LISTEN = 3;
+    public static final int PLAY_FROM_PLAY_HISTORY = 18;
+    public static final int PLAY_FROM_PUSH = 21;
+    public static final int PLAY_FROM_RANK = 13;
+    public static final int PLAY_FROM_SEARCH = 9;
+    public static final int PLAY_FROM_TAB_ALBUM = 24;
+    public static final int PLAY_FROM_TAB_SOUND = 23;
+    public static final String START_PLAYER_ACTION = "com.ximalaya.ting.android.ACTION_PLAY_START";
+    public static final String STATE_COMPLETE_ACTION = "com.ximalaya.ting.android.ACTION_COMPLETE";
+    public static final String UI_INIT_ACTION = "com.ximalaya.ting.android.ACTION_INIT_UI";
+    public static final boolean isBundleFrameWork = false;
+    public static boolean isDebug = true;
+    public static final boolean isDnsCache = true;
+    public static boolean isLogToFile = false;
+    public static final boolean isNormal = true;
+    public static boolean isSmallApk;
+    public static boolean isTestEnvironment;
+}

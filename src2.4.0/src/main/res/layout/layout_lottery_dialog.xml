@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="320dp" android:layout_height="381dp">
+        <RelativeLayout android:background="@drawable/gift_dialog_lottery_bg" android:layout_width="match_parent" android:layout_height="237dp">
+            <ImageView android:id="@+id/iv_cancel" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_close_icon" android:layout_alignParentRight="true" android:contentDescription="@string/app_name"/>
+            <ImageView android:id="@+id/iv_lottery" android:background="@drawable/gift_dialog_icon_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gift_dialog_icon" android:scaleType="centerInside" android:layout_centerInParent="true" android:contentDescription="@string/app_name"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_solid" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_sub_major" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/txt_get_draw_chance"/>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_label" android:id="@+id/tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/txt_get_random_gift"/>
+            <Button android:textSize="@dimen/text_size_normal" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_prize_detail" android:background="@drawable/shape_draw_button_bg" android:layout_width="96dp" android:layout_height="44dp" android:layout_marginTop="19dp" android:text="@string/txt_draw_prize"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

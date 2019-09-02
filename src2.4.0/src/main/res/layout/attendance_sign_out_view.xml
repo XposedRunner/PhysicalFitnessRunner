@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="90dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="@dimen/text_size_smallest" android:textColor="@color/white" android:gravity="center" android:id="@+id/attendance_label" android:background="@drawable/shape_dot_gray" android:layout_width="18dp" android:layout_height="18dp" android:text="到"/>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/attendance_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:gravity="center" android:id="@+id/start_valid_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginTop="10dp" android:layout_marginRight="28dp"/>
+        </LinearLayout>
+        <View android:id="@+id/line" android:background="@color/window_background" android:layout_marginLeft="8.5dp" android:layout_marginTop="33dp" android:layout_marginRight="8.5dp" style="@style/vertical_line"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_smallest" android:textColor="@color/white" android:gravity="center" android:background="@drawable/shape_dot_gray" android:layout_width="18dp" android:layout_height="18dp" android:text="退"/>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/attendance_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:gravity="center" android:id="@+id/end_valid_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginTop="10dp" android:layout_marginRight="28dp" android:layout_marginBottom="60dp"/>
+</LinearLayout>

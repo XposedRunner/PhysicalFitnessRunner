@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout android:id="@+id/loading_empty_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/srl_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.v4.widget.NestedScrollView android:scrollbarStyle="outsideOverlay" android:id="@+id/scrollView" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+                <LinearLayout android:orientation="vertical" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.zjwh.android_wh_physicalfitness.view.banner.DecentBanner android:id="@+id/find_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:aspectRatio="1.8"/>
+                    <android.support.v7.widget.RecyclerView android:id="@+id/module_recyclerView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_notice" android:background="@color/white" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <View style="@style/horizontal_line"/>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivNoticeIcon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <com.zjwh.android_wh_physicalfitness.view.UpDownTextSwitcher android:gravity="center_vertical" android:id="@+id/slideText" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_weight="1" app:noticeTextColor="@color/text_color_black" app:noticeTextSize="@dimen/text_size_normal"/>
+                            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:gravity="center" android:id="@+id/tv_notice_more" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="更多公告"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <FrameLayout android:background="@color/white" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="8dp">
+                        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/find_topic_more" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/txt_see_more_topic"/>
+                        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_label" android:layout_gravity="center_vertical" android:id="@+id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_topic"/>
+                    </FrameLayout>
+                    <android.support.v7.widget.RecyclerView android:id="@+id/find_topic_recycler" android:background="@color/white" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+                    <FrameLayout android:background="@color/white" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="8dp">
+                        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/find_article_more" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/txt_see_more_article"/>
+                        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_label" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_competitive_read"/>
+                    </FrameLayout>
+                    <android.support.v7.widget.RecyclerView android:id="@+id/rv_find" android:background="@color/white" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+                    <FrameLayout android:background="@color/white" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="8dp">
+                        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/find_activity_more" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/txt_see_more_activity"/>
+                        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_label" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_competitive_activity"/>
+                    </FrameLayout>
+                    <android.support.v7.widget.RecyclerView android:id="@+id/rv_activity" android:background="@color/white" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout>
+</LinearLayout>

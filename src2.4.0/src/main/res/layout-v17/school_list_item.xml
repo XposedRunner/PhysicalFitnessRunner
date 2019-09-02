@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rl_container" android:background="@drawable/school_and_semester_item" android:layout_width="match_parent" android:layout_height="45dp">
+    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:gravity="center_vertical" android:id="@+id/tv" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/schools_unchecked" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:layout_marginLeft="15dp" android:layout_alignParentBottom="true" android:layout_marginStart="15dp" style="@style/horizontal_line"/>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_node" android:background="@drawable/red_dot" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="12dp" android:layout_marginStart="12dp"/>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_label" android:id="@+id/tv_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginStart="12dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shadow_corners_radius_bg" android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="32dp" android:layout_marginTop="4dp" android:layout_marginRight="12dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="80dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.6285">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跑步里程"/>
+                    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:id="@+id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:singleLine="true"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+                    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跑步用时"/>
+                    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:id="@+id/tv_total_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/default_time" android:singleLine="true"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_marginTop="12dp" android:layout_marginBottom="12dp" style="@style/vertical_line"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.3715">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/sport_green" android:id="@+id/tv_complete_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/complete"/>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_label" android:id="@+id/tv_upload_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/s_5" android:text="@string/un_upload"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@+id/line" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" style="@style/horizontal_line"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lin_gift" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp">
+            <ImageView android:id="@+id/iv_gift" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/act_run_award_new"/>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_label" android:ellipsize="end" android:id="@+id/tv_gift_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

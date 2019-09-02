@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_top_bar"/>
+    <com.zjwh.android_wh_physicalfitness.view.VpSwipeRefreshLayout android:id="@+id/refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/tabLayout" android:layout_below="@+id/layout_title">
+        <android.support.design.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay2" android:id="@+id/appBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+                <android.support.design.widget.CollapsingToolbarLayout android:id="@+id/toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentScrim="@color/transparent" app:layout_scrollFlags="13">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <com.zjwh.android_wh_physicalfitness.view.banner.DecentBanner android:id="@+id/findBanner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:aspectRatio="2.7778"/>
+                        <android.support.v7.widget.RecyclerView android:id="@+id/recyclerClassify" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+                </android.support.design.widget.CollapsingToolbarLayout>
+                <TextView android:id="@+id/tvSearch" android:hint="搜索专辑" style="@style/SW.Search"/>
+            </android.support.design.widget.AppBarLayout>
+            <android.support.v7.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            <android.support.design.widget.FloatingActionButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/floatButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:src="@drawable/float_button_to_top" app:backgroundTint="@color/white" app:fabSize="1"/>
+        </android.support.design.widget.CoordinatorLayout>
+    </com.zjwh.android_wh_physicalfitness.view.VpSwipeRefreshLayout>
+    <View android:background="@drawable/shadow_up" android:layout_width="match_parent" android:layout_height="51dp" android:layout_above="@+id/tabLayout"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/tabLayout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="49dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/text_size_smaller" android:gravity="center" android:id="@+id/tvPaid" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="已购" android:drawableTop="@drawable/music_main_paid" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/text_size_smaller" android:gravity="center" android:id="@+id/tvHistory" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="播放历史" android:drawableTop="@drawable/music_main_history" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

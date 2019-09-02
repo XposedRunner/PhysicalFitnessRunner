@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.zjwh.android_wh_physicalfitness.view.banner.AspectRatioView android:id="@+id/imageViewLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" app:aspectRatio="1">
+        <ImageView android:id="@+id/imageView" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    </com.zjwh.android_wh_physicalfitness.view.banner.AspectRatioView>
+    <ImageView android:id="@+id/ivDelete" android:paddingLeft="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cheat_report_image_close" android:layout_alignRight="@+id/imageViewLayout"/>
+</RelativeLayout>

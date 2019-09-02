@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout android:id="@+id/loading_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/headerLayout" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="55dp">
+                <ImageView android:id="@+id/user_icon" android:layout_width="44dp" android:layout_height="44dp"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:id="@+id/user_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:id="@+id/attendance_valid_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+                <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/white" android:gravity="center" android:id="@+id/attendance_valid" android:visibility="gone" android:layout_width="40dp" android:layout_height="20dp" android:text="达标"/>
+            </LinearLayout>
+            <View style="@style/horizontal_line"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/nameLayout" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="8dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/attendance_icon"/>
+                <TextView android:textColor="@color/run_finish_status_1" android:gravity="center_vertical" android:id="@+id/attendanceName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+            </LinearLayout>
+            <ViewStub android:id="@+id/attendance_unsign_view" android:layout="@layout/attendance_unsign_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ViewStub android:id="@+id/attendance_sign_in_view" android:layout="@layout/attendance_sign_in_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ViewStub android:id="@+id/attendance_sign_out_view" android:layout="@layout/attendance_sign_out_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/text_color_label" android:id="@+id/bottom_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginRight="28dp" android:layout_marginBottom="25dp" android:lineSpacingMultiplier="1.1"/>
+        </LinearLayout>
+    </com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/dialog_view" android:background="@drawable/shape_corner_solid_dark" android:layout_width="160dp" android:layout_height="89dp">
+    <com.zjwh.android_wh_physicalfitness.view.GPSSearchView android:id="@+id/img" android:layout_width="20dp" android:layout_height="25dp" android:layout_marginTop="15dp" android:contentDescription="@string/app_name"/>
+    <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/white" android:gravity="center" android:id="@+id/tipTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:layout_marginRight="5dp" android:text="@string/txt_search_gps" android:layout_marginStart="5dp" android:layout_marginEnd="5dp"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/toolbar"/>
+        <EditText android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_major" android:textColorHint="@color/text_color_hint" android:gravity="center_vertical" android:id="@+id/signature_et" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="@dimen/s_45" android:layout_marginTop="@dimen/s_12" android:hint="@string/msg_signature" android:lines="3" android:maxLength="20"/>
+        <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/text_color_hint" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:text="@string/txt_twenty_limit"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/mLyout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

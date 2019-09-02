@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/semester_tip_bg" android:paddingLeft="@dimen/default_margin_size" android:paddingRight="@dimen/default_margin_size" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/text_size_big" android:textColor="@color/text_color_sub_major" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@+id/tvClose" android:layout_width="match_parent" android:layout_height="44dp" android:text="学期提示" android:drawableLeft="@drawable/semester_tip_icon" android:drawableRight="@drawable/semester_arrow_down" android:drawablePadding="8dp"/>
+        <android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:text="学期目标"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:id="@+id/tvSemesterTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="学期起止日期:"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:id="@+id/tvSemesterTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="每日成绩上限:"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:id="@+id/tvGradeLimit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="单次最低要求:"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:id="@+id/tvDistanceLimit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="配速:"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:id="@+id/tvSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:id="@+id/txtValidTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="跑步有效时间:"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:id="@+id/tvValidTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:lineSpacingExtra="4dp"/>
+                <WebView android:id="@+id/moreLimitLayout" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</FrameLayout>

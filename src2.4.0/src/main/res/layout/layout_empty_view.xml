@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/empty_view" android:background="@color/window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25"/>
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_label" android:id="@+id/tv_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_no_data" android:drawablePadding="16dp"/>
+    <Button android:textSize="@dimen/text_size_normal" android:textColor="@color/white" android:id="@+id/btnOperate" android:background="@drawable/shape_corner_solid_green" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="去跑步"/>
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.75"/>
+</LinearLayout>

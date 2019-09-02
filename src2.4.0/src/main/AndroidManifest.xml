@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:versionCode="116" android:versionName="2.4.0" package="com.zjwh.android_wh_physicalfitness" platformBuildVersionCode="116" platformBuildVersionName="2.4.0">
+
+    <uses-feature android:name="android.hardware.sensor.stepcounter" android:required="true"/>
+    <uses-feature android:name="android.hardware.sensor.stepdetector" android:required="true"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="com.zjwh.android_wh_physicalfitness.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <permission android:name="com.zjwh.android_wh_physicalfitness.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/logo" android:name="s.h.e.l.l.S" android:allowBackup="false" android:largeHeap="true" android:supportsRtl="true" android:roundIcon="@mipmap/logo_round">
+        <meta-data android:name="UMENG_CHANNEL" android:value="007"/>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="nKheqL6j25VjPamlDc2zu0aN5Syk3Gy6"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="586f172ba40fa37b78000f65"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="b244fe42ee523f0222c313c616e85143"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <service android:name="com.zjwh.android_wh_physicalfitness.service.RunLocationService" android:persistent="true" android:enabled="true" android:exported="false" android:priority="1000">
+            <intent-filter>
+                <action android:name="com.zjwh.android_wh_physicalfitness.service.RunLocationService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.zjwh.android_wh_physicalfitness.service.BluetoothService" android:persistent="true" android:exported="false"/>
+        <service android:name="com.zjwh.android_wh_physicalfitness.service.InnerService" android:exported="false"/>
+        <service android:name="com.zjwh.android_wh_physicalfitness.service.DaemonJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false" android:process=":daemon"/>
+        <service android:name="com.zjwh.android_wh_physicalfitness.service.DaemonService" android:enabled="true" android:exported="false" android:process=":daemon"/>
+        <service android:name="com.zjwh.android_wh_physicalfitness.service.DaemonService$DaemonInnerService" android:enabled="true" android:exported="false" android:process=":daemon"/>
+        <receiver android:name="com.zjwh.android_wh_physicalfitness.receiver.JPushReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <category android:name="com.zjwh.android_wh_physicalfitness"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.zjwh.android_wh_physicalfitness.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <activity android:theme="@style/LaunchTheme" android:name="com.zjwh.android_wh_physicalfitness.activity.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="zjwh"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Anim_fade" android:name="com.zjwh.android_wh_physicalfitness.activity.WelcomeLoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.MainActivity" android:clearTaskOnLaunch="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:alwaysRetainTaskState="true"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.run.SportInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Anim_fade" android:name="com.zjwh.android_wh_physicalfitness.activity.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.mine.PersonalInfoActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.mine.EditUserInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.mine.AboutUsActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Anim_fade" android:name="com.zjwh.android_wh_physicalfitness.activity.RegisterActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Anim_fade" android:name="com.zjwh.android_wh_physicalfitness.activity.ForgetPasswordActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.ClauseActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Anim_fade" android:name="com.zjwh.android_wh_physicalfitness.activity.BindAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Anim_fade" android:name="com.zjwh.android_wh_physicalfitness.activity.mine.ChooseCampusActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.SearchSchoolActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.mine.RunHistoryDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.RunPictureActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.mine.HistoryRankActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.DownloadOfflineMapActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.due.DueRunCreateActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.due.DueRunWaitActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.due.DueRunCompleteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.RunRuleActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.mine.MyCourseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.mine.ChooseTeacherActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.mine.ChooseCourseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.mine.StudentListActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.UMDefault" android:name="com.umeng.socialize.editorpage.ShareActivity" android:excludeFromRecents="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.zjwh.android_wh_physicalfitness.wxapi.WXEntryActivity" android:exported="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.wxapi.WXPayEntryActivity" android:exported="true" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tauth.AuthActivity" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1105273889"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.umeng.socialize.media.WBShareCallBackActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity" android:exported="false" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.sina.weibo.sdk.share.WbShareTransActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" android:exported="false" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.sina.weibo.sdk.net.DownloadService" android:exported="false"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.CheckAttendanceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.MultiImageSelectorActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.WebViewActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.ArticleDetailActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <meta-data android:name="com.zjwh.android_wh_physicalfitness.utils.GlideConfiguration" android:value="GlideModule"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.rank.CheatReportActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.mine.SettingActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.mine.SecretActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.mine.AttendanceActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.mine.AttendanceListActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.mine.ScanActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.find.ArticleActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.find.ActivitiesActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Anim_fade" android:name="com.zjwh.android_wh_physicalfitness.activity.find.AddTopicTagActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Anim_fade" android:name="com.zjwh.android_wh_physicalfitness.activity.find.DynamicPublishActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.find.TopicActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.find.TopicDetailActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.find.DynamicDetailActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.find.DynamicLikeActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.AllRunListActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.mine.MyStudentActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.ChangeCampusActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.appeal.AppealActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.appeal.MyAppealInfoActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.PrizeListActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.FansListActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.ConcernListActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.HomePageActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.activity.SportsDataActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.mine.SportCampusActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.run.HighTipActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Anim_fade" android:name="com.zjwh.android_wh_physicalfitness.ui.run.AutoFixActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.run.AutoFixGuideActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.run.RunRandomActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.run.RunSequenceActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.run.RunDueActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.run.RunFreeActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.rank.RankingListActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.mine.RunHistoryActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.run.RunEndActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.message.MessageActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.message.FansActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.message.LikeActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.message.NoticeActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.message.CommentActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.chat.ChatActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden" android:parentActivityName="com.zjwh.android_wh_physicalfitness.activity.MainActivity"/>
+        <receiver android:name="com.zjwh.android_wh_physicalfitness.receiver.ChatReceiver">
+            <intent-filter>
+                <action android:name="com.zjwh.android_wh_physicalfitness.receiver.action_chat_receiver"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.notice.NoticeListActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.notice.NoticeDetailActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.mine.ChangeNameSchoolNumberActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.mine.MyOrderActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.mine.ChangeMyCampusActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.mine.ChangeMyDepartActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.mine.ChangeMyClassActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.mine.ChangeMyPhoneNumActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.mine.SchoolNumBackActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.mine.CheckMyPhoneNumActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.mine.QrCodeActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.mine.RollCallActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.mine.RollCallRecordActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Anim_fade" android:name="com.zjwh.android_wh_physicalfitness.activity.ChooseDepartActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Anim_fade" android:name="com.zjwh.android_wh_physicalfitness.ui.mine.ChooseClassActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.ImageViewerActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.ximalaya.ting.android.opensdk.auth.component.XmlyBrowserComponent" android:exported="false" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ximalaya.ting.android.xmpayordersdk.XmPayOrderActivity" android:exported="false" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.ximalaya.ting.android.opensdk.player.service.XmPlayerService" android:process=":player"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.music.MusicClassifyActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.music.MusicMainActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.music.AlbumDetailActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.music.MusicPlayHistoryActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.music.MusicClassifyDetailActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.music.MusicSearchActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.music.MusicPurchasedActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.zjwh.android_wh_physicalfitness.ui.welfare.WelfareClubActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.zxing.activity.CaptureActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/MyDialogStyle" android:name="cn.jpush.android.ui.PopWinActivity" android:exported="false"/>
+        <activity android:theme="@style/Theme.NoTitleBar" android:name="cn.jpush.android.ui.PushActivity" android:exported="false" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.zjwh.android_wh_physicalfitness"/>
+            </intent-filter>
+        </activity>
+        <service android:name="cn.jpush.android.service.PushService" android:enabled="true" android:exported="false" android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+        <service android:name="cn.jpush.android.service.DaemonService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+                <category android:name="com.zjwh.android_wh_physicalfitness"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="cn.jpush.android.service.PushReceiver" android:enabled="true" android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <category android:name="com.zjwh.android_wh_physicalfitness"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" android:exported="false"/>
+        <provider android:name="cn.jpush.android.service.DataProvider" android:exported="false" android:process=":pushcore" android:authorities="com.zjwh.android_wh_physicalfitness.DataProvider"/>
+        <provider android:name="cn.jpush.android.service.DownloadProvider" android:exported="true" android:authorities="com.zjwh.android_wh_physicalfitness.DownloadProvider"/>
+        <meta-data android:name="JPUSH_CHANNEL" android:value="sports-world"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="9c26b2b3c00c292586ee3463"/>
+        <service android:name="com.qiyukf.nimlib.service.NimService" android:process=":core"/>
+        <service android:name="com.qiyukf.nimlib.service.NimService$Aux" android:process=":core"/>
+        <service android:name="com.qiyukf.unicorn.analytics.AnalyticsService" android:process=":core"/>
+        <receiver android:name="com.qiyukf.nimlib.service.NimReceiver" android:exported="false" android:process=":core">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.qiyukf.nimlib.service.WakeupService"/>
+        <provider android:name="com.qiyukf.nim.uikit.provider.UnicornProvider" android:exported="false" android:authorities="com.zjwh.android_wh_physicalfitness.unicorn.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ysf_provider"/>
+        </provider>
+        <activity android:theme="@style/ysf_window_theme" android:icon="@drawable/ysf_action_bar_icon_transparent" android:name="com.qiyukf.unicorn.ui.activity.ServiceMessageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ysf_window_theme" android:name="com.qiyukf.nim.uikit.session.activity.WatchMessagePictureActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ysf_window_theme" android:name="com.qiyukf.nim.uikit.session.activity.PickImageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ysf_window_theme" android:name="com.qiyukf.nim.uikit.common.media.picker.activity.PickerAlbumActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ysf_window_theme" android:name="com.qiyukf.nim.uikit.common.media.picker.activity.PickerAlbumPreviewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ysf_window_theme" android:label="@string/ysf_input_panel_take" android:name="com.qiyukf.nim.uikit.common.media.picker.activity.PreviewImageFromCameraActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ysf_window_theme" android:label="@string/ysf_activity_file_download" android:name="com.qiyukf.unicorn.ui.activity.FileDownloadActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ysf_window_theme" android:name="com.qiyukf.unicorn.ui.activity.UrlImagePreviewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ysf_window_theme" android:name="com.qiyukf.unicorn.ui.activity.CardPopupActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ysf_window_theme" android:label="@string/ysf_activity_leave_message_detail" android:name="com.qiyukf.unicorn.ui.activity.LeaveMessageDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ysf_window_theme" android:name="com.qiyukf.nim.uikit.session.activity.CaptureVideoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ysf_window_theme" android:label="@string/ysf_video_play" android:name="com.qiyukf.nim.uikit.session.activity.WatchVideoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+    </application>
+</manifest>

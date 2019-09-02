@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <android.support.v4.widget.NestedScrollView android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:gravity="center_vertical" android:background="@color/window_background" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="30dp" android:text="累计汇总"/>
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="45dp">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:layout_width="0dp" android:layout_height="wrap_content" android:text="累计跑步天数" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/tv_all_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0天"/>
+            </LinearLayout>
+            <View android:layout_marginLeft="15dp" android:layout_marginStart="15dp" style="@style/horizontal_line"/>
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="45dp">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:layout_width="0dp" android:layout_height="wrap_content" android:text="累计总里程" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/tv_all_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0公里"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:gravity="center_vertical" android:background="@color/window_background" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="30dp" android:text="学期汇总"/>
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="45dp">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/txt_run_time" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/tv_run_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0次"/>
+            </LinearLayout>
+            <View android:layout_marginLeft="15dp" android:layout_marginStart="15dp" style="@style/horizontal_line"/>
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="45dp">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/txt_total_distance" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/tv_all_run_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0公里"/>
+            </LinearLayout>
+            <View android:layout_marginLeft="15dp" android:layout_marginStart="15dp" style="@style/horizontal_line"/>
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="45dp">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/txt_grade_distance" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/tv_valid_run_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0公里"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:gravity="bottom" android:background="@color/window_background" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/txt_see_sport_chart"/>
+            <RelativeLayout android:background="@drawable/bar_chart_bg" android:paddingLeft="@dimen/s_10" android:paddingRight="@dimen/s_10" android:layout_width="match_parent" android:layout_height="240dp" android:layout_marginLeft="10dp" android:layout_marginTop="30dp" android:layout_marginRight="10dp" android:layout_marginBottom="60dp">
+                <com.zjwh.android_wh_physicalfitness.view.BarChart android:id="@+id/bar_chart" android:layout_width="match_parent" android:layout_height="match_parent" app:barNormalColor="@color/chartColorNormalText" app:barSelectedColor="@color/chartColorSelectedText" app:barWidth="7dp" app:bottomLabelSize="10sp" app:lineColor="@color/chartColorNormalText" app:rightLabelSize="7sp" app:selectedTextSize="12sp" app:textNormalColor="@color/chartColorNormalText" app:textSelectedColor="@color/chartColorSelectedText" app:textTitle="本柱状图仅展示近7天运动数据" app:textUnit="公里" app:titleSize="10sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

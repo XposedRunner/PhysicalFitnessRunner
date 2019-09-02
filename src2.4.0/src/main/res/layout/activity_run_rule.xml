@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout android:id="@+id/loading_empty_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@+id/ll_content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:id="@+id/web_progress" android:layout_width="match_parent" android:layout_height="2dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleHorizontal"/>
+            <WebView android:id="@+id/webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rl_btn" android:layout_below="@+id/web_progress"/>
+            <View android:id="@+id/bottomLine" android:background="@drawable/shadow_up" android:layout_width="match_parent" android:layout_height="51dp" android:layout_above="@+id/rl_btn"/>
+            <RelativeLayout android:id="@+id/rl_btn" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <Button android:id="@+id/btn_contract_us" android:text="@string/contract_us" style="@style/SW.Button.Bottom"/>
+                <View android:layout_width="0dp" android:layout_height="0dp" android:layout_below="@+id/btn_contract_us"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout>
+</LinearLayout>

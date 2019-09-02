@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="80dp" android:baselineAligned="false">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="0dp" android:layout_height="80dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:id="@+id/auto_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/auto_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="100dp" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/text_size_normal" android:layout_gravity="center" android:id="@+id/auto_fix_state" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/auto_fix_pro" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:indeterminateDrawable="@drawable/chat_progress_drawable"/>
+            <Button android:textSize="@dimen/text_size_small" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/auto_fix_jump" android:background="@drawable/auto_fix_black_btn" android:visibility="gone" android:layout_width="70dp" android:layout_height="27dp" android:text="前往开启"/>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:layout_marginLeft="15dp" style="@style/horizontal_line"/>
+</LinearLayout>

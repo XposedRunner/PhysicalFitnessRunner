@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Sports.RootStyle">
+    <com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout android:id="@+id/loading_empty_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.amap.api.maps.MapView android:id="@+id/mv_map" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/shadow_corners_radius_bg" android:padding="4dp" android:layout_width="match_parent" android:layout_height="168dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="16dp" android:layout_alignParentBottom="true">
+            <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_room_name" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp">
+                <ImageView android:id="@+id/ivRoomHost" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginRight="12dp"/>
+                <EditText android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_major" android:textColorHint="@color/text_color_hint" android:id="@+id/et_address" android:background="@null" android:layout_width="match_parent" android:layout_height="18dp" android:hint="@string/create_room" android:maxLines="1" android:singleLine="true" android:maxLength="12" android:layout_toRightOf="@+id/ivRoomHost" android:inputType="text"/>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_major" android:textColorHint="@color/sport_green" android:gravity="center_vertical" android:id="@+id/tv_msg" android:background="@null" android:layout_width="match_parent" android:layout_height="18dp" android:hint="@string/txt_sel_end_point" android:maxLines="1" android:maxLength="12" android:layout_toRightOf="@+id/ivRoomHost" android:layout_below="@+id/et_address" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <TextView android:enabled="false" android:textColor="@color/bottom_btn_color" android:gravity="center" android:id="@+id/btn_create" android:background="@drawable/bottom_btn_bg" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="16dp" android:layout_marginTop="40dp" android:layout_marginRight="16dp" android:layout_marginBottom="20dp" android:text="@string/txt_create_room"/>
+        </LinearLayout>
+    </com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout>
+    <include layout="@layout/layout_top_bar_no_title"/>
+</FrameLayout>

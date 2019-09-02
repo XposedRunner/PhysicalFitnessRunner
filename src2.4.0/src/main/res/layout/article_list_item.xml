@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.zjwh.android_wh_physicalfitness.view.banner.AspectRatioView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content" app:aspectRatio="2.54">
+            <ImageView android:id="@+id/article_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:contentDescription="@string/app_name"/>
+        </com.zjwh.android_wh_physicalfitness.view.banner.AspectRatioView>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/article_item_bottom_bg" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="36dp">
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/white" android:id="@+id/tvLike" android:layout_width="0dp" android:layout_height="wrap_content" android:drawableLeft="@drawable/like_white_icon" android:drawablePadding="6dp" android:layout_weight="1" android:drawableStart="@drawable/like_white_icon"/>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/white" android:id="@+id/tvRead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/find_list_item_read"/>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="36dp">
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_black" android:ellipsize="end" android:id="@+id/article_title" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_label" android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

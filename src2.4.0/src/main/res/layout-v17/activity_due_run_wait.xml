@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.amap.api.maps.MapView android:id="@+id/mv_map" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/conditionLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_marginRight="9dp" android:layout_marginBottom="5dp" android:layout_above="@+id/bottomLayout">
+        <ImageButton android:layout_gravity="center" android:id="@+id/iv_condition" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/run_map_operate_bg" android:contentDescription="@string/app_name"/>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/run_map_tip_icon" android:contentDescription="@string/app_name"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_start_time" android:background="@drawable/run_wait_left_time_bg" android:layout_width="102dp" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="5dp" android:layout_above="@+id/bottomLayout" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/text_size_big" android:textColor="@color/text_color_black" android:id="@+id/tv_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_before_due_run"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottomLayout" android:background="@drawable/shadow_corners_radius_bg" android:padding="4dp" android:layout_width="match_parent" android:layout_height="242dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="16dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_room_name" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp">
+            <ImageView android:id="@+id/ivRoomHost" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginRight="12dp" android:layout_marginEnd="12dp"/>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_major" android:id="@+id/tv_room_name" android:background="@null" android:layout_width="match_parent" android:layout_height="18dp" android:maxLines="1" android:singleLine="true" android:maxLength="12" android:layout_toRightOf="@+id/ivRoomHost" android:layout_toEndOf="@+id/ivRoomHost"/>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_major" android:gravity="center_vertical" android:id="@+id/tv_loc_desc" android:background="@null" android:layout_width="match_parent" android:layout_height="18dp" android:maxLines="1" android:maxLength="12" android:layout_toRightOf="@+id/ivRoomHost" android:layout_below="@+id/tv_room_name" android:layout_alignParentBottom="true" android:layout_toEndOf="@+id/ivRoomHost"/>
+        </RelativeLayout>
+        <View android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp" android:layout_marginBottom="20dp" style="@style/horizontal_line"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+            <android.support.v7.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@+id/recyclerView" android:clickable="false" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:overScrollMode="never"/>
+            <TextView android:textSize="@dimen/text_size_smallest" android:textColor="@color/text_color_hint" android:layout_gravity="bottom" android:id="@+id/tv_room_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="4dp"/>
+        </LinearLayout>
+        <TextView android:enabled="false" android:textColor="@color/bottom_btn_color" android:gravity="center" android:id="@+id/btn_enter" android:background="@drawable/bottom_btn_bg" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="16dp" android:layout_marginTop="40dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:text="立即开始"/>
+    </LinearLayout>
+    <include layout="@layout/layout_top_bar_no_title"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/run_wait_in_out_bg" android:layout_width="220dp" android:layout_height="44dp" android:layout_below="@+id/layout_title" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/ivInOutIcon" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp"/>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tvInOutInfo" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/white" android:id="@+id/tvInOutTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+    </LinearLayout>
+</RelativeLayout>

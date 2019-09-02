@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/lLayout_bg" android:layout_width="320dp" android:layout_height="381dp">
+        <RelativeLayout android:background="@drawable/update_dialog_top_bg" android:layout_width="match_parent" android:layout_height="200dp">
+            <ImageView android:id="@+id/iv" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="44dp" android:src="@drawable/update_dialog_icon" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/iv" android:lineSpacingExtra="2dp"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_horizontal" android:background="@drawable/shape_dialog_corner_white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/rel_load" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_label" android:id="@+id/tv_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="16dp" android:layout_marginStart="15dp"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/sport_green" android:id="@+id/tv_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignBottom="@+id/tv_size" android:layout_alignParentRight="true" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+                <ProgressBar android:id="@+id/pb_percent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="7dp" android:layout_marginRight="15dp" android:max="100" android:layout_below="@+id/tv_size" style="@style/mProgress_horizontal"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_label" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/tv_msg" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="59dp" android:maxLines="2" android:lineSpacingExtra="5dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lin_btn" android:layout_width="208dp" android:layout_height="44dp" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:gravity="center" android:id="@+id/tv_neg" android:background="@drawable/shape_corner_solid_fa_stroke_e6" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_pos" android:background="@drawable/shape_dialog_detail_bg" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_enabled="true">
+        <shape>
+            <solid android:color="@color/btn_send_enable"/>
+            <stroke android:width="1px" android:color="@color/bottom_post_enable_false"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <stroke android:width="1px" android:color="@color/bottom_post_enable_false"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+</selector>

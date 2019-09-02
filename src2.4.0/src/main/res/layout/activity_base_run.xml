@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/operate_fragment_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <fragment android:name="com.zjwh.android_wh_physicalfitness.ui.run.RunOperateFragment" android:id="@+id/operate_fragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/run_fragment_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <fragment android:name="com.zjwh.android_wh_physicalfitness.ui.run.BaseRunFragment" android:id="@+id/run_fragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <ImageButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/btnMusic" android:background="@null" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="151dp" android:src="@drawable/music_player_music"/>
+</FrameLayout>

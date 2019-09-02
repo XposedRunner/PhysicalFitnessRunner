@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/prize_bg" android:layout_width="match_parent" android:layout_height="70dp">
+        <ImageView android:id="@+id/iv_prize" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginLeft="8dp" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/iv_prize">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_big" android:textStyle="bold" android:textColor="@color/text_color_sub_major" android:id="@+id/tv_prize_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/t_8" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_prize_detail" android:background="@drawable/shape_draw_win_item_bg" android:layout_width="64dp" android:layout_height="24dp" android:layout_marginLeft="10dp" android:layout_marginRight="8dp" android:text="查看详情"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_label" android:id="@+id/tv_prize_valid_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gt3_geetest_analyzing">Analysing...</string>
+    <string name="gt3_geetest_checking">Intelligent Verification</string>
+    <string name="gt3_geetest_click">Please click captcha button</string>
+    <string name="gt3_geetest_closed">Closed</string>
+    <string name="gt3_geetest_http_error">Network Faliure</string>
+    <string name="gt3_geetest_http_timeout">Network Timeout</string>
+    <string name="gt3_geetest_pass">Success</string>
+    <string name="gt3_geetest_please_verify">Please complete verification</string>
+    <string name="gt3_geetest_success">Success</string>
+    <string name="gt3_geetest_support">Geetest provides technical support</string>
+    <string name="gt3_geetest_try_again">Click Retry</string>
+</resources>

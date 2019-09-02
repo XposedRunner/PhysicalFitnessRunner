@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="@dimen/s_45">
+        <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_not_used" android:layout_width="0dp" android:layout_height="match_parent" android:text="未使用" android:layout_weight="1"/>
+        <View android:layout_gravity="center" android:background="@color/window_background" android:layout_width="@dimen/s_0.5" android:layout_height="@dimen/s_20"/>
+        <TextView android:textColor="@color/text_color_hint" android:gravity="center" android:id="@+id/tv_used" android:layout_width="0dp" android:layout_height="match_parent" android:text="已使用" android:layout_weight="1"/>
+        <View android:layout_gravity="center" android:background="@color/window_background" android:layout_width="@dimen/s_0.5" android:layout_height="@dimen/s_20"/>
+        <TextView android:textColor="@color/text_color_hint" android:gravity="center" android:id="@+id/tv_all" android:layout_width="0dp" android:layout_height="match_parent" android:text="全部" android:layout_weight="1"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

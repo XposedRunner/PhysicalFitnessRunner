@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="adBlockUrl">
+        <item>ubmcmm.baidustatic.com</item>
+        <item>cpro2.baidustatic.com</item>
+        <item>cpro.baidustatic.com</item>
+        <item>s.lianmeng.360.cn</item>
+        <item>nsclick.baidu.com</item>
+        <item>pos.baidu.com</item>
+        <item>cbjs.baidu.com</item>
+        <item>cpro.baidu.com</item>
+        <item>images.sohu.com/cs/jsfile/js/c.js</item>
+        <item>union.sogou.com/</item>
+        <item>sogou.com/</item>
+        <item>a.baidu.com</item>
+        <item>c.baidu.com</item>
+    </array>
+    <array name="attendance_state">
+        <item>出勤</item>
+        <item>缺勤</item>
+        <item>请假</item>
+    </array>
+    <array name="attendance_state_tab">
+        <item>全部</item>
+        <item>出勤</item>
+        <item>缺勤</item>
+        <item>请假</item>
+    </array>
+    <array name="audioBook">
+        <item>幻想</item>
+        <item>都市</item>
+        <item>武侠</item>
+        <item>悬疑</item>
+        <item>言情</item>
+        <item>历史</item>
+    </array>
+    <array name="bestSeller">
+        <item>文学</item>
+        <item>励志</item>
+        <item>名著</item>
+        <item>生活</item>
+    </array>
+    <array name="education">
+        <item>职业技能</item>
+        <item>当众演讲</item>
+        <item>心理调节</item>
+        <item>人际沟通</item>
+        <item>高效管理</item>
+    </array>
+    <array name="emotion">
+        <item>旅游心情</item>
+        <item>睡前夜话</item>
+        <item>个人成长</item>
+        <item>魅力养成</item>
+        <item>心理健康</item>
+        <item>情绪压力</item>
+        <item>恋爱技巧</item>
+    </array>
+    <array name="entertainment">
+        <item>趣闻热点</item>
+        <item>段子</item>
+        <item>笑话</item>
+        <item>百科姿势</item>
+        <item>方言</item>
+        <item>综艺</item>
+        <item>明星粉丝</item>
+        <item>鬼故事</item>
+        <item>星座</item>
+        <item>八卦</item>
+    </array>
+    <array name="fashionLife">
+        <item>视频</item>
+        <item>时尚</item>
+        <item>生活家</item>
+        <item>美食</item>
+        <item>美容</item>
+        <item>运动</item>
+        <item>萌宠</item>
+    </array>
+    <array name="history">
+        <item>百家讲坛</item>
+        <item>中国史</item>
+        <item>世界史</item>
+        <item>名人传</item>
+        <item>侃野史</item>
+    </array>
+    <array name="humanity">
+        <item>空中图书馆</item>
+        <item>名家讲座</item>
+        <item>经典名著</item>
+        <item>读书会</item>
+        <item>诗词歌赋</item>
+        <item>诗人电台</item>
+        <item>纪实档案</item>
+        <item>艺术修养</item>
+    </array>
+    <array name="information">
+        <item>热点评鲜</item>
+        <item>每日新知</item>
+        <item>懒人新闻</item>
+    </array>
+    <array name="moive">
+        <item>新片导览</item>
+        <item>热剧追踪</item>
+        <item>原声记忆</item>
+        <item>影人明星</item>
+    </array>
+    <array name="music">
+        <item>运动</item>
+        <item>老歌</item>
+        <item>纯音乐</item>
+        <item>民谣</item>
+        <item>欧美</item>
+        <item>古风</item>
+        <item>影视</item>
+        <item>日韩</item>
+    </array>
+    <array name="openCourse">
+        <item>学堂在线</item>
+        <item>Coursera</item>
+        <item>万门大学</item>
+        <item>台湾名校公开课</item>
+    </array>
+    <array name="radio">
+        <item>文艺台</item>
+        <item>音乐台</item>
+        <item>故事台</item>
+    </array>
+    <array name="technology">
+        <item>专业技能</item>
+        <item>咨询</item>
+        <item>互联网</item>
+        <item>区块链</item>
+        <item>科普</item>
+    </array>
+    <array name="travel">
+        <item>游记攻略</item>
+        <item>旅游玩家</item>
+        <item>语音导游</item>
+        <item>走遍中国</item>
+        <item>环球风物</item>
+        <item>旅行剧场</item>
+    </array>
+    <array name="ysf_dialog_items_queue">
+        <item>帮我排队</item>
+        <item>下次咨询</item>
+        <item>取消</item>
+    </array>
+</resources>

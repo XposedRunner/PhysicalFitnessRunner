@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" style="@style/Sports.RootStyle">
+    <include layout="@layout/layout_top_bar"/>
+    <ScrollView android:background="@color/white" android:paddingTop="8dp" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/dynamic_topic_title_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/sport_green" android:gravity="center" android:id="@+id/dynamic_publish_title" android:layout_width="wrap_content" android:layout_height="23dp"/>
+                <ImageButton android:id="@+id/dynamic_title_delete" android:background="@null" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dynamic_publish_title_delete_icon" android:scaleType="center" android:contentDescription="@string/app_name"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+                <EditText android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_black" android:textColorHint="@color/text_color_hint" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/dynamic_publish_edt" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="80dp" android:hint="此刻想说点什么..." android:maxLength="200" android:lineSpacingExtra="4dp"/>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/tvEdtNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="0/200" android:layout_below="@+id/dynamic_publish_edt" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.5dp" android:layout_marginTop="5.5dp" android:layout_marginRight="12.5dp" android:layout_marginBottom="2.5dp" android:overScrollMode="never"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llAddTopicTag" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="40dp">
+            <ImageView android:background="@null" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/dynamic_publish_title_union_icon" android:contentDescription="@string/app_name"/>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_major" android:layout_gravity="center_vertical" android:background="@drawable/add_topic_tag_bg" android:paddingLeft="12dp" android:paddingTop="3dp" android:paddingRight="12dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:text="#点此添加话题标签"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

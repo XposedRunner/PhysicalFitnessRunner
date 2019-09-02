@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/act_run_infowindow" android:paddingLeft="@dimen/s_7.5" android:paddingTop="@dimen/s_5" android:paddingRight="@dimen/s_7.5" android:paddingBottom="@dimen/s_5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/text_color_major" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name"/>
+    <TextView android:textSize="@dimen/text_size_smallest" android:textColor="@color/text_color_hint" android:id="@+id/tv_address" android:paddingBottom="@dimen/s_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/s_4" android:text="@string/msg_amount_limit"/>
+</LinearLayout>

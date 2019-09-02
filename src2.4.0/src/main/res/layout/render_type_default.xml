@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/daimajia_slider_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/white" android:gravity="center" android:id="@+id/topic_type" android:background="@drawable/find_activity_state_processing" android:paddingLeft="12dp" android:paddingTop="2dp" android:paddingRight="12dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="41dp"/>
+    <ProgressBar android:id="@+id/loading_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+</RelativeLayout>

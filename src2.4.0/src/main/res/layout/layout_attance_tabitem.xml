@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="@dimen/s_45">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@drawable/selector_attendance_tabtext" android:id="@+id/tv_attend_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部"/>
+        <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@drawable/selector_attendance_tabtext" android:layout_gravity="center_vertical" android:id="@+id/tv_studentcounts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/s_3" android:text="(0)"/>
+    </LinearLayout>
+    <View android:id="@+id/tab_deliver" android:layout_marginTop="@dimen/s_12_5" android:layout_marginBottom="@dimen/s_12_5" android:layout_alignParentRight="true" style="@style/vertical_line"/>
+</RelativeLayout>

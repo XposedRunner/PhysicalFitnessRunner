@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sw.emoji.EmoticonsKeyboard xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/keyboard" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Sports.RootStyle">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/layout_top_bar_chat"/>
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/recycler" android:paddingBottom="15dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</com.sw.emoji.EmoticonsKeyboard>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/parentPanel" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_corner_solid_white_dialog" android:layout_width="280dp" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/topPanel" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@android:id/icon" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true"/>
+            <TextView android:textSize="20sp" android:textColor="@color/text_color_major" android:layout_gravity="center_horizontal" android:id="@+id/alertTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/contentPanel" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="10dp" android:layout_weight="1">
+            <android.support.v4.widget.NestedScrollView android:id="@+id/scrollView" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@color/text_color_major" android:gravity="center" android:id="@android:id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginRight="17dp" android:lineSpacingExtra="10dp"/>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/customPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="22dp" android:layout_weight="1">
+            <FrameLayout android:id="@+id/custom" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/buttonPanel" android:layout_width="match_parent" android:layout_height="45dp" android:divider="?android:attr/dividerHorizontal" android:showDividers="beginning" android:dividerPadding="0dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="?android:attr/dividerVertical" android:measureWithLargestChild="true" android:showDividers="middle" android:dividerPadding="0dp">
+                <Button android:layout_gravity="start" android:id="@android:id/button2" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="2" android:layout_weight="1" style="?attr/buttonBarNegativeButtonStyle"/>
+                <Button android:layout_gravity="center_horizontal" android:id="@android:id/button3" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="2" android:layout_weight="1" style="?attr/buttonBarNeutralButtonStyle"/>
+                <Button android:layout_gravity="end" android:id="@android:id/button1" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="2" android:layout_weight="1" style="?attr/buttonBarPositiveButtonStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

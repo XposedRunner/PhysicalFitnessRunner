@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/shadow_corners_radius_bg" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/t_8" android:textColor="@color/gray_d9" android:gravity="center" android:layout_width="60dp" android:layout_height="104dp" android:text="换一批\10查看更多推荐" android:lineSpacingExtra="4dp"/>
+</LinearLayout>

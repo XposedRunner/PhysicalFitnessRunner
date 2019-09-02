@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/layout_top_bar"/>
+        <android.support.design.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay2" android:id="@+id/appBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+                <android.support.design.widget.CollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="11">
+                    <RelativeLayout android:id="@+id/rlTopView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+                        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_sub_major" android:paddingLeft="16dp" android:paddingTop="12dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="兴趣热榜"/>
+                        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/tvMore" android:paddingLeft="16dp" android:paddingTop="12dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        <android.support.v7.widget.RecyclerView android:id="@+id/recyclerView" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tvMore"/>
+                    </RelativeLayout>
+                </android.support.design.widget.CollapsingToolbarLayout>
+                <include layout="@layout/layout_dynamic_top_bar"/>
+            </android.support.design.widget.AppBarLayout>
+            <android.support.v4.view.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="320dp" android:layout_height="381dp">
+        <RelativeLayout android:background="@drawable/gift_dialog_result_bg" android:layout_width="match_parent" android:layout_height="237dp">
+            <ImageView android:id="@+id/iv_cancel" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dialog_close_icon" android:layout_alignParentRight="true" android:contentDescription="@string/app_name"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/iv_prize" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/gift_dialog_sorry_icon" android:contentDescription="@string/app_name"/>
+                <TextView android:textSize="13sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="20dp" android:layout_marginRight="15dp" android:text="谢谢参与，同学\10很遗憾，本次未被幸运砸中" android:lineSpacingExtra="8dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_solid" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_sub_major" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="24dp" android:layout_marginRight="15dp" android:text="@string/txt_get_prize_person"/>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="7dp" android:layout_marginRight="15dp" android:text="@string/txt_see_in_the_gift_list"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_prize_detail" android:background="@drawable/shape_draw_button_bg" android:layout_width="96dp" android:layout_height="44dp" android:layout_marginTop="19dp" android:text="我知道了"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

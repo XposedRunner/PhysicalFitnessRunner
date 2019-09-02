@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" style="@style/Sports.RootStyle">
+    <include layout="@layout/toolbar"/>
+    <com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout android:id="@+id/loading_empty_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/llSearch" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.zjwh.android_wh_physicalfitness.view.XEditText android:id="@+id/etSearch" android:hint="请输入教师名字" android:drawablePadding="12dp" android:imeOptions="actionDone" style="@style/SW.Search"/>
+            <View style="@style/horizontal_line"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@+id/rv" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/llSearch" android:overScrollMode="never"/>
+    </com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout>
+</LinearLayout>

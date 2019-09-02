@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll_bg" android:background="@drawable/shape_corner4_solid_white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="52.5dp">
+        <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/text_color_major" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sure_userinfo_title" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_dg_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:src="@drawable/close_icon" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:background="@drawable/shape_solid_1px_white" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/hint_campus" style="@style/textstyle_c33_t13"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:layout_gravity="center_vertical" android:id="@+id/tv_dg_school" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/shape_solid_1px_white" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="12dp">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/hint_school_num" style="@style/textstyle_c33_t13"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:layout_gravity="center_vertical" android:id="@+id/tv_dg_school_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/shape_solid_1px_white" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="12dp">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/depart" style="@style/textstyle_c33_t13"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:layout_gravity="center_vertical" android:id="@+id/tv_dg_depart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/classLayout" android:background="@drawable/shape_solid_1px_white" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="12dp">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/gradeClass" style="@style/textstyle_c33_t13"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:layout_gravity="center_vertical" android:id="@+id/tv_dg_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/shape_solid_1px_white" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="12dp">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/hint_name" style="@style/textstyle_c33_t13"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:layout_gravity="center_vertical" android:id="@+id/tv_dg_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="12dp" android:baselineAligned="false">
+        <LinearLayout android:background="@drawable/shape_solid_1px_white" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1">
+            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/hint_sex" style="@style/textstyle_c33_t13"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:layout_gravity="center_vertical" android:id="@+id/tv_dg_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+        </LinearLayout>
+        <LinearLayout android:background="@drawable/shape_solid_1px_white" android:layout_width="0dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_weight="1">
+            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/entrance_year" style="@style/textstyle_c33_t13"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:layout_gravity="center_vertical" android:id="@+id/tv_dg_enter_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="@dimen/text_size_normal" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_dg_submit" android:background="@drawable/shape_option" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="@dimen/s_20" android:layout_marginBottom="@dimen/s_20" android:text="@string/txt_sure" style="?android:attr/borderlessButtonStyle"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/prize_list_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="8dp" android:layout_marginRight="12dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginRight="15dp" android:layout_marginEnd="15dp">
+        <ImageView android:id="@+id/iv_icon" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginLeft="@dimen/s_15" android:layout_centerVertical="true" android:layout_marginStart="@dimen/s_15"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/iv_icon" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_toEndOf="@+id/iv_icon">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/t_16" android:textStyle="bold" android:textColor="@color/text_color_sub_major" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/red_1" android:gravity="center" android:id="@+id/tv_copy" android:background="@drawable/shape_solid_tsp_stroke_red" android:layout_width="68dp" android:layout_height="24dp" android:layout_marginLeft="15dp" android:text="@string/copy" android:layout_marginStart="15dp"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_label" android:id="@+id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/red_1" android:ellipsize="end" android:id="@+id/tv_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:singleLine="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llExplain" android:paddingBottom="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+        <View android:background="@drawable/prize_list_dash_line" android:layout_width="match_parent" android:layout_height="3dp" android:layerType="software"/>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/tvExplain" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+    </LinearLayout>
+</LinearLayout>

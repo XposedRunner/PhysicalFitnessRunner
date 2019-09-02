@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/activity_appeal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <EditText android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:textColorHint="@color/text_color_hint" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/et_appeal" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginTop="12dp" android:minHeight="200dp" android:hint="@string/txt_write_appeal_reason" android:maxLength="100" android:layout_below="@+id/layout_title" android:lineSpacingExtra="8dp" android:inputType="textMultiLine"/>
+    <View android:id="@+id/bottomLine" android:background="@drawable/shadow_up" android:layout_width="match_parent" android:layout_height="51dp" android:layout_above="@+id/rl_appeal"/>
+    <RelativeLayout android:id="@+id/rl_appeal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/btn_appeal" android:text="@string/txt_submit_appeal" style="@style/SW.Button.Bottom"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_below="@+id/btn_appeal"/>
+    </RelativeLayout>
+</RelativeLayout>

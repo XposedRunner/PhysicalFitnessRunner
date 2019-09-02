@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@drawable/shadow_corners_radius_bg" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="-44dp" android:layout_marginRight="8dp">
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_label" android:id="@+id/tvRankTip" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="很遗憾你没有上榜，再接再厉！"/>
+        <ImageView android:id="@+id/ivIcon" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginTop="28dp"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_black" android:ellipsize="end" android:id="@+id/tvRankName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48dp" android:layout_marginTop="28dp" android:layout_marginRight="48dp" android:maxLines="1" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:ellipsize="end" android:id="@+id/tvRankSign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48dp" android:layout_marginTop="48dp" android:layout_marginRight="48dp" android:maxLines="1" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_black" android:ellipsize="end" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/tvRankDis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+    </FrameLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp"/>
+</LinearLayout>

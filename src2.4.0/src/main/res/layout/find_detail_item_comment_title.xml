@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/window_background" android:layout_width="match_parent" android:layout_height="12dp"/>
+    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:gravity="center_vertical" android:id="@+id/find_detail_comment_title" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="40dp"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sw.emoji.EmoticonsKeyboard xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/keyboard_layout" style="@style/Sports.RootStyle">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/toolbar"/>
+        <com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout android:id="@+id/loading_empty_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="45.5dp">
+            <android.support.v4.widget.NestedScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/nonVideoLayout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="23sp" android:textColor="@color/text_color_major" android:id="@+id/find_detail_title" android:paddingLeft="15dp" android:paddingTop="25dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="5dp"/>
+                    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/find_detail_sub_title" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="35dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <com.zjwh.android_wh_physicalfitness.view.WebView.VideoEnabledWebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/text_color_hint" android:gravity="right" android:id="@+id/find_detail_bottom" android:paddingLeft="15dp" android:paddingTop="35dp" android:paddingRight="15dp" android:paddingBottom="35dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="5dp"/>
+                    <android.support.v7.widget.RecyclerView android:id="@+id/recycler" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout>
+        <FrameLayout android:id="@+id/videoLayout" android:background="@android:color/black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</com.sw.emoji.EmoticonsKeyboard>

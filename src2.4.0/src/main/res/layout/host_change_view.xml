@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:textSize="13sp" android:id="@+id/edt_host" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="host:port(192.168.0.133:18080)"/>
+    <Button android:id="@+id/change_host_open" android:background="@drawable/shape_solid_stroke_white" android:layout_width="100dp" android:layout_height="30dp" android:text="开启替换"/>
+    <Button android:id="@+id/change_host_close" android:background="@drawable/shape_solid_stroke_white" android:layout_width="100dp" android:layout_height="30dp" android:text="关闭替换"/>
+</LinearLayout>

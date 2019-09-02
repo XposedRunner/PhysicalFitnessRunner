@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rlBuy">
+        <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay2" android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <android.support.design.widget.CollapsingToolbarLayout android:id="@+id/toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp" app:contentScrim="@color/transparent" app:layout_scrollFlags="13">
+                <com.zjwh.android_wh_physicalfitness.view.banner.AspectRatioView android:layout_width="match_parent" android:layout_height="wrap_content" app:aspectRatio="1.6667">
+                    <ImageView android:id="@+id/ivAlbumBg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="@string/app_name"/>
+                    <View android:background="@color/c80gray" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:id="@+id/ivAlbumCover" android:layout_width="120dp" android:layout_height="120dp" android:layout_marginLeft="16dp" android:layout_marginBottom="20dp" android:scaleType="fitXY" android:layout_alignParentBottom="true"/>
+                        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/white" android:id="@+id/tvFrom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="来源：喜马拉雅fm" android:layout_toRightOf="@+id/ivAlbumCover" android:layout_alignBottom="@+id/ivAlbumCover"/>
+                        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tvAnnouncerName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="3dp" android:singleLine="true" android:layout_toRightOf="@+id/ivAlbumCover" android:layout_above="@+id/tvFrom"/>
+                        <TextView android:textSize="@dimen/t_18" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tvAlbumName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="10dp" android:singleLine="true" android:layout_toRightOf="@+id/ivAlbumCover" android:layout_above="@+id/tvAnnouncerName"/>
+                    </RelativeLayout>
+                </com.zjwh.android_wh_physicalfitness.view.banner.AspectRatioView>
+            </android.support.design.widget.CollapsingToolbarLayout>
+            <android.support.design.widget.TabLayout android:id="@+id/tabLayout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="44dp"/>
+            <View style="@style/horizontal_line"/>
+            <View style="@style/horizontal_line"/>
+        </android.support.design.widget.AppBarLayout>
+        <include layout="@layout/layout_top_bar"/>
+        <android.support.v4.view.ViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </android.support.design.widget.CoordinatorLayout>
+    <RelativeLayout android:id="@+id/rlBuy" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="80dp" android:layout_alignParentBottom="true">
+        <TextView android:enabled="true" android:textSize="@dimen/text_size_normal" android:textColor="@color/white" android:gravity="center" android:id="@+id/tvBuy" android:background="@drawable/bottom_btn_bg" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="28dp" android:layout_marginRight="28dp" android:text="购买专辑" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

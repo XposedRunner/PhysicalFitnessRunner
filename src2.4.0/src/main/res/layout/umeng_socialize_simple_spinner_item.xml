@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="4dp" android:layout_width="match_parent" android:layout_height="40dp">
+    <ImageView android:id="@+id/umeng_socialize_spinner_img" android:layout_width="32dp" android:layout_height="32dp" android:scaleType="fitXY"/>
+    <TextView android:gravity="center_vertical" android:id="@+id/umeng_socialize_spinner_txt" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/umeng_socialize_spinner_img"/>
+</RelativeLayout>

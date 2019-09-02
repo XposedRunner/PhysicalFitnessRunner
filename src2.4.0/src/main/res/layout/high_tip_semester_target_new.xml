@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginRight="50dp" android:src="@drawable/high_tip_semester_target_light"/>
+    <ImageView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginTop="40dp" android:layout_marginRight="65dp" android:src="@drawable/high_tip_semester_target_up_arrow"/>
+    <ImageView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:src="@drawable/high_tip_semester_target_text"/>
+</LinearLayout>

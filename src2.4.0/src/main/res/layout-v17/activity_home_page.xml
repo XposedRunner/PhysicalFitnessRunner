@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/activity_my_movement" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay2" android:id="@+id/appBarLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <android.support.design.widget.CollapsingToolbarLayout android:id="@+id/toolbar_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="45dp" app:layout_scrollFlags="13">
+                <com.zjwh.android_wh_physicalfitness.view.banner.AspectRatioView android:id="@+id/iv_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:aspectRatio="1.2">
+                    <ImageView android:id="@+id/ivZoomView" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/homepage_default_bg" android:scaleType="centerCrop"/>
+                    <ImageView android:background="@color/rank_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:alpha="0.2"/>
+                </com.zjwh.android_wh_physicalfitness.view.banner.AspectRatioView>
+                <RelativeLayout android:id="@+id/rlPersonalInfo" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="150dp">
+                    <ImageView android:id="@+id/ivIcon" android:background="@drawable/white_circle" android:padding="0.5dp" android:focusable="true" android:clickable="true" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginLeft="12dp" android:src="@drawable/default_round_male" android:layout_marginStart="12dp"/>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/llLevel" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_toRightOf="@+id/ivIcon" android:layout_alignBottom="@+id/ivIcon">
+                        <ImageView android:id="@+id/ivLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/level_zero_icon"/>
+                        <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/white" android:gravity="center" android:id="@+id/tvLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="初进校园" android:drawablePadding="4dp"/>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/text_size_bigger" android:textColor="@color/white" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:layout_above="@+id/llLevel" android:layout_alignLeft="@+id/llLevel"/>
+                    <ImageView android:id="@+id/ivChat" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_icon" android:layout_toLeftOf="@+id/ivSportData" android:layout_alignBottom="@+id/ivSportData"/>
+                    <ImageView android:id="@+id/ivSportData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:src="@drawable/sport_data_icon" android:layout_alignBottom="@+id/llLevel" android:layout_alignParentRight="true" android:layout_marginEnd="12dp" android:layout_alignParentEnd="true"/>
+                    <include android:id="@+id/llPersonalInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="4dp" android:layout_marginRight="8dp" android:layout_below="@+id/ivIcon" layout="@layout/home_page_head_des_view"/>
+                </RelativeLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <RelativeLayout android:id="@+id/rlContainer" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </android.support.design.widget.CoordinatorLayout>
+    <include layout="@layout/layout_top_bar"/>
+    <ImageView android:id="@+id/ivPublishDynamic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/publish_dynamic_icon" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

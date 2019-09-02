@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/s_15" android:layout_width="match_parent" android:layout_height="@dimen/s_60">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:id="@+id/tv_studentname" android:text="" style="@style/textstyle_c33_t15"/>
+        <TextView android:id="@+id/tv_studentnumber" android:layout_marginTop="@dimen/s_8" android:text="" style="@style/textstyle_cb2_t12"/>
+    </LinearLayout>
+    <com.zjwh.android_wh_physicalfitness.view.SegmentControlView android:layout_gravity="center_horizontal" android:id="@+id/scv" android:layout_width="167dp" android:layout_height="@dimen/s_30" android:layout_marginRight="@dimen/s_15" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:scv_BackgroundNormalColor="@android:color/white" app:scv_BackgroundSelectedColor="@android:color/white" app:scv_FrameColor="@color/window_background" app:scv_FrameCornerRadius="@dimen/s_3" app:scv_FrameWidth="@dimen/p_1" app:scv_Gradient="true" app:scv_TextArray="@array/attendance_state" app:scv_TextNormalColor="@color/text_color_hint" app:scv_TextSize="@dimen/text_size_small"/>
+    <View android:layout_alignParentBottom="true" style="@style/horizontal_line"/>
+</RelativeLayout>

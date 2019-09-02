@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:background="@color/gray_d4d4d9" android:paddingTop="27dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.zjwh.android_wh_physicalfitness.view.XEditText android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:textColorHint="@color/text_color_hint" android:gravity="center_vertical" android:id="@+id/et_search" android:background="@drawable/shape_corner4_solid_white" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="0dp" android:layout_height="@dimen/s_30" android:layout_marginLeft="15dp" android:hint="@string/search_school" android:singleLine="true" android:drawableLeft="@mipmap/icon_search" android:drawablePadding="@dimen/s_7.5" android:layout_weight="1" android:imeOptions="actionSearch" android:drawableStart="@mipmap/icon_search"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/green" android:gravity="center" android:id="@+id/tv_cancel" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/cancel"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <se.emilsjolander.stickylistheaders.StickyListHeadersListView android:id="@+id/school_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_search_result" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:background="@color/window_background" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="30dp">
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_major" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/perfect_march" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/text_color_hint" android:id="@+id/tv_total_search_counts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="共0条记录"/>
+            </LinearLayout>
+            <ListView android:id="@+id/lv_search_result" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:dividerHeight="0dp"/>
+        </LinearLayout>
+        <View android:id="@+id/shandle" android:background="@color/gray_33_a03" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

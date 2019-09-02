@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_top_bar"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="学号:"/>
+            <EditText android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:textColorHint="@color/text_color_hint" android:id="@+id/et_school_num" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="25dp" android:hint="请输入正确学号" android:singleLine="true" android:inputType="text"/>
+        </LinearLayout>
+        <View android:background="@color/window_background" android:layout_width="match_parent" android:layout_height="@dimen/s_0.5" android:layout_marginLeft="15dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="姓名:"/>
+            <EditText android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:textColorHint="@color/text_color_hint" android:id="@+id/et_name" android:background="@null" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="25dp" android:hint="请输入真实姓名" android:singleLine="true" android:inputType="text"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:layout_gravity="right" android:id="@+id/tv_back_schoolNum" android:paddingTop="20dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="找回学号?"/>
+</LinearLayout>

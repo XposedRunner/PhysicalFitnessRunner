@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/recycler" android:paddingLeft="8dp" android:paddingTop="5dp" android:paddingRight="8dp" android:paddingBottom="10dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" android:animateLayoutChanges="false"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <android.support.v4.widget.NestedScrollView android:id="@+id/other_scroll_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout android:id="@+id/loading_empty_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </android.support.v4.widget.NestedScrollView>
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/white" android:gravity="center" android:id="@+id/tvTips" android:background="@color/sport_green" android:paddingTop="2dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20dp" android:text="运动伙伴的心情，30天后会消失，记得关注Ta哦！"/>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar android:theme="@style/ToolbarTheme" android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="45dp" android:minHeight="45dp" app:contentInsetStart="@dimen/keyline_2" app:titleTextAppearance="@style/ActionBar.TitleText">
+        <TextView android:textSize="@dimen/text_size_bigger" android:textStyle="bold" android:textColor="@color/text_color_black" android:layout_gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </android.support.v7.widget.Toolbar>
+    <View android:id="@+id/titleLine" style="@style/horizontal_line"/>
+</LinearLayout>

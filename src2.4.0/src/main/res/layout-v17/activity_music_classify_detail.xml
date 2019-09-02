@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_top_bar"/>
+    <com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout android:id="@+id/loading_empty_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View style="@style/horizontal_line"/>
+            <TextView android:id="@+id/tvSearch" android:hint="搜索专辑" style="@style/SW.Search"/>
+            <View android:id="@+id/popupWindowLine" style="@style/horizontal_line"/>
+            <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp">
+                <android.support.design.widget.TabLayout android:id="@+id/tabLayout" android:layout_width="match_parent" android:layout_height="44dp" android:layout_toLeftOf="@+id/ivChooseTag" android:layout_toStartOf="@+id/ivChooseTag"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/ivChooseTag" android:padding="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/music_tag_icon" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                <View android:background="@drawable/music_classify_bg" android:layout_width="16dp" android:layout_height="match_parent" android:layout_toLeftOf="@+id/ivChooseTag" android:layout_toStartOf="@+id/ivChooseTag"/>
+            </RelativeLayout>
+            <View style="@style/horizontal_line"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llSort" android:layout_width="match_parent" android:layout_height="44dp">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/sport_green" android:gravity="center_vertical" android:id="@+id/tvComprehensive" android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="综合排序"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:gravity="center_vertical" android:id="@+id/tvPlayMost" android:paddingLeft="25dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="播放最多"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:gravity="center_vertical" android:id="@+id/tvUpdateRecent" android:paddingLeft="25dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="最近更新"/>
+            </LinearLayout>
+            <View style="@style/horizontal_line"/>
+            <android.support.v4.view.ViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout>
+</LinearLayout>

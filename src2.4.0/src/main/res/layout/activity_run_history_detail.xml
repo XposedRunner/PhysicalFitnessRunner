@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rl_run_detail" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.amap.api.maps.MapView android:id="@+id/mv_map" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include layout="@layout/layout_top_run_detail"/>
+    <include layout="@layout/run_history_bottom_view"/>
+    <View android:id="@+id/bottomLine" android:background="@drawable/shadow_up" android:layout_width="match_parent" android:layout_height="51dp" android:layout_above="@+id/rl_appeal"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/rl_appeal" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/btn_appeal" style="@style/SW.Button.Bottom"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_label" android:gravity="center" android:id="@+id/appeal_under_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="80dp"/>
+    </LinearLayout>
+</RelativeLayout>

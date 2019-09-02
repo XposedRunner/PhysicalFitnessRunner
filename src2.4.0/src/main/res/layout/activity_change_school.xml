@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/activity_change_school" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/colorOldPrimary" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/iv_cancel" android:background="@null" android:paddingLeft="30dp" android:paddingBottom="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close" android:scaleType="centerInside" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="@dimen/t_25" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_choose_run_campus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/txt_choose_run_campus"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="10dp" android:text="@string/txt_run_campus" android:layout_below="@+id/tv_choose_run_campus"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

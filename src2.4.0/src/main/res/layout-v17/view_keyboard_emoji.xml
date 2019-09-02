@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/keyboard_edt_layout" android:background="@color/keyboard_emoji_bg" android:paddingLeft="10dp" android:paddingTop="7dp" android:paddingRight="10dp" android:paddingBottom="7dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+        <ImageButton android:enabled="false" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/keyboard_send_img" android:background="@null" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="8dp" android:src="@drawable/send_img_icon" android:scaleType="centerInside" android:layout_marginEnd="8dp"/>
+        <EditText android:textSize="12sp" android:textColor="#333333" android:textColorHint="#b2b2b2" android:id="@+id/keyboard_comment_edt" android:background="@drawable/shape_edt_bg" android:paddingLeft="10dp" android:paddingTop="7dp" android:paddingRight="10dp" android:paddingBottom="7dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="35dp" android:hint="@string/emoji_hint_normal" android:maxLines="5" android:layout_weight="1" android:inputType="textMultiLine"/>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/keyboard_like_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="#b2b2b2" android:gravity="center" android:id="@+id/keyboard_like" android:background="@drawable/shape_edt_bg" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="赞"/>
+            <TextView android:textSize="12sp" android:textColor="#b2b2b2" android:gravity="center" android:id="@+id/keyboard_unlike" android:background="@drawable/shape_edt_bg" android:visibility="gone" android:layout_width="35dp" android:layout_height="35dp" android:text="踩"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/keyboard_post_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp">
+            <ImageButton android:gravity="center" android:id="@+id/keyboard_change" android:background="@null" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:src="@drawable/chat_change_emoji_icon" android:scaleType="centerInside"/>
+            <ImageButton android:enabled="false" android:gravity="center" android:id="@+id/keyboard_comment" android:background="@null" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/emoji_post_icon_bg" android:scaleType="centerInside"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/keyboard_emoji_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px"/>
+        <FrameLayout android:background="@color/keyboard_emoji_bg" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <android.support.v4.view.ViewPager android:id="@+id/keyboard_emoji_body" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+            <com.sw.emoji.EmotionIndicatorView android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/keyboard_emoji_indicator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="35dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/keyboard_image_btn" android:background="@color/keyboard_emoji_bg" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="50dp" android:layout_height="match_parent" android:src="@drawable/chat_keyboard_bottom_icon" android:scaleType="centerInside"/>
+            <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <TextView android:enabled="false" android:textSize="13sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/keyboard_post_btn" android:background="@drawable/emoji_post_bg" android:layout_width="60dp" android:layout_height="match_parent" android:text="发送"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

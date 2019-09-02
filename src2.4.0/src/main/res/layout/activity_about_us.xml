@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_aboutUsLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:src="@drawable/about_us_icon" android:contentDescription="@string/app_name"/>
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:layout_gravity="center_horizontal" android:id="@+id/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/debug_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@+id/jump_edt" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="html url" android:inputType="text"/>
+        <Button android:textColor="@color/white" android:id="@+id/jump_btn" android:background="@drawable/shape_btn_appeal" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="jump"/>
+    </LinearLayout>
+</LinearLayout>

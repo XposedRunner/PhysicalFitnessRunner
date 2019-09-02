@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/D12">
+        <RelativeLayout android:orientation="vertical" android:id="@+id/rl_offline_map" android:background="@color/white" android:paddingLeft="@dimen/D15" android:paddingRight="@dimen/D15" android:layout_width="match_parent" android:layout_height="@dimen/s_45">
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:id="@+id/tv_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/locationing" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/text_color_hint" android:id="@+id/tv_filesize1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/s_5" android:layout_toRightOf="@+id/tv_city" android:layout_alignBaseline="@+id/tv_city" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_major" android:id="@+id/tv_filesize2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toLeftOf="@+id/iv_download" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/green" android:id="@+id/tv_downstate" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_download" android:background="@drawable/download_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/s_10" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:id="@+id/ll_progress" android:background="@color/white" android:paddingLeft="@dimen/D15" android:paddingRight="@dimen/D15" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/D15">
+            <ProgressBar android:id="@+id/pb_download" android:layout_width="match_parent" android:layout_height="3dp" android:max="100" style="@style/mProgress_horizontal_small"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

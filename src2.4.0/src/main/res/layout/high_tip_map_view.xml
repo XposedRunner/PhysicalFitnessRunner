@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/high_tip_map" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/topLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="7dp" android:layout_marginRight="8dp" android:src="@drawable/run_gps_high" android:contentDescription="@string/app_name"/>
+            <ImageButton android:layout_gravity="right" android:background="@drawable/map_change_bg" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginLeft="13dp" android:layout_marginTop="11dp" android:layout_marginRight="13dp" android:src="@drawable/run_map_change_icon" android:contentDescription="@string/app_name"/>
+        </FrameLayout>
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="6dp" android:paddingTop="5dp" android:paddingRight="6dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageButton android:background="@drawable/run_map_operate_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/run_map_tip_icon" android:contentDescription="@string/app_name"/>
+            <ImageButton android:background="@drawable/run_map_operate_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-2dp" android:layout_marginRight="-2dp" android:src="@drawable/run_map_location_icon" android:contentDescription="@string/app_name"/>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:layout_gravity="center" android:background="@drawable/run_map_operate_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/run_map_fix_icon" android:contentDescription="@string/app_name"/>
+                <View android:layout_gravity="center" android:id="@+id/run_map_fix" android:layout_width="44dp" android:layout_height="44dp"/>
+            </FrameLayout>
+        </LinearLayout>
+        <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="25dp" app:cardCornerRadius="4dp" app:cardElevation="1dp">
+            <include layout="@layout/base_run_bottom_layout"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/run_tip_normal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/centerView" android:layout_width="2dp" android:layout_height="2dp" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/point_assign" android:padding="2.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="31.5dp" android:layout_marginRight="31.5dp" android:layout_marginBottom="66.5dp" android:src="@drawable/img_point_must_normal" android:layout_toLeftOf="@+id/centerView" android:layout_above="@+id/centerView"/>
+        <ImageView android:id="@+id/point_normal1" android:padding="2.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.5dp" android:layout_marginRight="20.5dp" android:layout_marginBottom="56.5dp" android:src="@drawable/img_point_normal" android:layout_toRightOf="@+id/centerView" android:layout_above="@+id/centerView"/>
+        <ImageView android:id="@+id/point_normal2" android:padding="2.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.5dp" android:src="@drawable/img_point_normal" android:layout_toRightOf="@+id/centerView" android:layout_above="@+id/centerView"/>
+        <ImageView android:id="@+id/point_normal3" android:padding="2.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.5dp" android:layout_marginTop="42.5dp" android:layout_marginRight="23.5dp" android:src="@drawable/img_point_normal" android:layout_toLeftOf="@+id/centerView" android:layout_below="@+id/centerView"/>
+        <ImageView android:id="@+id/point_normal4" android:padding="2.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="80.5dp" android:layout_marginBottom="10dp" android:src="@drawable/img_point_normal" android:layout_toLeftOf="@+id/centerView" android:layout_above="@+id/centerView"/>
+    </RelativeLayout>
+</FrameLayout>

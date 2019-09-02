@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_enabled="false" android:color="@color/bottom_post_enable_false"/>
+    <item android:state_enabled="true" android:color="@color/keyboard_emoji_bg"/>
+    <item android:color="@color/keyboard_emoji_bg"/>
+</selector>

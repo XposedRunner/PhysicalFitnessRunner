@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/gt3_dialog_shape" android:layout_width="220dp" android:layout_height="140dp" android:layout_centerInParent="true">
+    <RelativeLayout android:id="@+id/lay_re" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/gt3_ot_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gt3ovv" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="14sp" android:textColor="#005aff" android:id="@+id/gt3_ot_tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/gt3_geetest_http_timeout" android:layout_below="@+id/gt3_ot_iv" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="9sp" android:textColor="#c3c3c3" android:id="@+id/tv_test_geetest_cord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:text="201" android:layout_below="@+id/lay_re" android:layout_alignParentRight="true"/>
+    <View android:id="@+id/gt3_ot_view3" android:background="#efefef" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_above="@+id/gt3_ot_llll"/>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/gt3_ot_llll" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="26dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="10sp" android:textColor="#cacaca" android:id="@+id/gt3_ot_tvvv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gt3_geetest_support" android:drawableLeft="@drawable/gt3logo" android:drawablePadding="4dp" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

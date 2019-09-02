@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/lin_toast_root" android:background="@drawable/shape_solid_translucence" android:paddingLeft="12dp" android:paddingTop="7dp" android:paddingRight="12dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_toast" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

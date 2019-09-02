@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/loading_empty_layout" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.zjwh.android_wh_physicalfitness.view.MyPullToZoomScrollView android:id="@+id/pullToZoomView" android:layout_width="match_parent" android:layout_height="match_parent" app:contentView="@layout/rank_personal_content_view" app:headerView="@layout/rank_personal_header_view" app:isHeaderParallax="false" app:zoomView="@layout/rank_personal_image_view"/>
+</com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout>

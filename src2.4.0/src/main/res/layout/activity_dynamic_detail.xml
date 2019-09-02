@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sw.emoji.EmoticonsKeyboard xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/keyboard_layout" style="@style/Sports.RootStyle">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/toolbar"/>
+        <com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout android:id="@+id/loading_empty_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView android:id="@+id/recycler" android:paddingTop="8dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            </LinearLayout>
+        </com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout>
+    </LinearLayout>
+</com.sw.emoji.EmoticonsKeyboard>

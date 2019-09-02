@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Ir a la pantalla de inicio</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Desplazarse hacia arriba</string>
+    <string name="abc_action_menu_overflow_description">Más opciones</string>
+    <string name="abc_action_mode_done">Listo</string>
+    <string name="abc_activity_chooser_view_see_all">Ver todo</string>
+    <string name="abc_activitychooserview_choose_application">Seleccionar una aplicación</string>
+    <string name="abc_capital_off">NO</string>
+    <string name="abc_capital_on">SÍ</string>
+    <string name="abc_search_hint">Buscar…</string>
+    <string name="abc_searchview_description_clear">Borrar consulta</string>
+    <string name="abc_searchview_description_query">Consulta</string>
+    <string name="abc_searchview_description_search">Buscar</string>
+    <string name="abc_searchview_description_submit">Enviar consulta</string>
+    <string name="abc_searchview_description_voice">Búsqueda por voz</string>
+    <string name="abc_shareactionprovider_share_with">Compartir con</string>
+    <string name="abc_shareactionprovider_share_with_application">Compartir con %s</string>
+    <string name="abc_toolbar_collapse_description">Contraer</string>
+    <string name="gt3_geetest_analyzing">Comprobando...</string>
+    <string name="gt3_geetest_checking">Comprobando</string>
+    <string name="gt3_geetest_click">Hacer clic para comprobar</string>
+    <string name="gt3_geetest_closed">Se ha cancelado el captcha</string>
+    <string name="gt3_geetest_http_error">Error</string>
+    <string name="gt3_geetest_http_timeout">Fin del tiempo de espera</string>
+    <string name="gt3_geetest_pass">Aprobado</string>
+    <string name="gt3_geetest_please_verify">Sin completar</string>
+    <string name="gt3_geetest_success">Aprobado</string>
+    <string name="gt3_geetest_support">Con tecnología de Geetest</string>
+    <string name="gt3_geetest_try_again">Reintentar</string>
+    <string name="search_menu_title">Buscar</string>
+    <string name="status_bar_notification_info_overflow">+999</string>
+</resources>

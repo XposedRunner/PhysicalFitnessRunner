@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/gray_E6_a98" android:layout_width="match_parent" android:layout_height="214dp">
+    <TextView android:textSize="@dimen/text_size_small" android:textStyle="bold" android:textColor="@color/text_color_major" android:gravity="center_horizontal" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/D15" android:text="@string/txt_share_run_record"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/D15" android:layout_marginRight="@dimen/s_3" android:layout_weight="1">
+        <android.support.v7.widget.RecyclerView android:layout_gravity="center" android:id="@+id/rv_share" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_bigger" android:textColor="@color/text_color_major" android:gravity="center" android:id="@+id/tv_cancle" android:background="@color/cf2_a98" android:layout_width="match_parent" android:layout_height="@dimen/s_50" android:text="@string/cancel"/>
+</LinearLayout>

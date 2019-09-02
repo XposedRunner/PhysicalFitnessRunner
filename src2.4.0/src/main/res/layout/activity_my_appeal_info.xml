@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/activity_my_appeal_info" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout android:id="@+id/loading_empty_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="12dp">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/txt_appeal_result" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/green" android:id="@+id/tv_appeal_result" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="12dp">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/txt_appeal_person" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/tv_appeal_person" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="12dp">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/txt_appeal_time" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/tv_appeal_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/txt_appeal_suggestion"/>
+            <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="200dp">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_normal" android:id="@+id/et_appeal_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:lineSpacingExtra="8dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout>
+</LinearLayout>

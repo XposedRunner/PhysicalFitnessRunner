@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/activity_choose_campus" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="right" android:layout_width="match_parent" android:layout_height="67dp">
+        <ImageView android:id="@+id/iv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/s_34_5" android:layout_marginRight="@dimen/s_15" android:src="@mipmap/img_back" android:layout_marginEnd="@dimen/s_15"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/t_25" android:textStyle="bold" android:textColor="@color/text_color_major" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:text="@string/campus_list"/>
+    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="15dp" android:layout_marginRight="24dp" android:text="@string/txt_can_not_change"/>
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:gravity="center_vertical" android:background="@color/window_background" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="25dp" android:text="@string/txt_choose_campus"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

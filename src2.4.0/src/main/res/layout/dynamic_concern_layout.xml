@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/find_more_concern" android:background="?attr/selectableItemBackground" android:paddingLeft="10dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="换一批"/>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_label" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recommand_concern"/>
+    </FrameLayout>
+    <com.zjwh.android_wh_physicalfitness.view.MyRecyclerView android:id="@+id/rv_concern" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+</LinearLayout>

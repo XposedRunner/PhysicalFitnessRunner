@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="210dp" android:layout_height="210dp" android:layout_marginTop="28dp" android:layout_marginBottom="28dp">
+        <com.zjwh.android_wh_physicalfitness.view.progress.ProgressView android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="match_parent" app:colorOrientation="4" app:emptyStrokeWidth="10dp" app:fullStrokeWidth="10dp"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:id="@+id/tvDisLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="计入成绩" android:layout_above="@+id/tvValidDis" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="28sp" android:textColor="@color/sport_green" android:id="@+id/tvValidDis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_label" android:id="@+id/tvTargetDis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/tvValidDis" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <View android:layout_marginLeft="@dimen/default_margin_size" android:layout_marginRight="@dimen/default_margin_size" style="@style/horizontal_line"/>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/default_margin_size" android:paddingRight="@dimen/default_margin_size" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_label" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="已跑里程" android:drawableLeft="@drawable/sport_info_finish_dis" android:drawablePadding="10dp" android:layout_weight="1" android:drawableStart="@drawable/sport_info_finish_dis"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:gravity="center_vertical" android:id="@+id/tvFinishDis" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/default_margin_size" android:paddingRight="@dimen/default_margin_size" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_label" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="异常里程" android:drawableLeft="@drawable/sport_info_error_dis" android:drawablePadding="10dp" android:layout_weight="1" android:drawableStart="@drawable/sport_info_error_dis"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:gravity="center_vertical" android:id="@+id/tvErrorDis" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/default_margin_size" android:paddingRight="@dimen/default_margin_size" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_label" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="今日公里数" android:drawableLeft="@drawable/sport_info_today_dis" android:drawablePadding="10dp" android:layout_weight="1" android:drawableStart="@drawable/sport_info_today_dis"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:gravity="center_vertical" android:id="@+id/tvTodayDis" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/default_margin_size" android:paddingRight="@dimen/default_margin_size" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_label" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="本学期跑步天数" android:drawableLeft="@drawable/sport_info_semester_day" android:drawablePadding="10dp" android:layout_weight="1" android:drawableStart="@drawable/sport_info_semester_day"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:gravity="center_vertical" android:id="@+id/tvSemesterDay" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

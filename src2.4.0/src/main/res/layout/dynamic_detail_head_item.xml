@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/comment_top"/>
+    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/sport_green" android:id="@+id/dynamic_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="23dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_major" android:id="@+id/dynamic_summary" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:lineSpacingExtra="4dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_sports_data" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="7dp">
+        <ImageView android:id="@+id/tag_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="15dp" android:src="@drawable/sports_data" android:contentDescription="@string/app_name"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/sport_green" android:id="@+id/tag_sports_data" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/dynamicRecyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.5dp" android:layout_marginRight="10.5dp"/>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="@dimen/text_size_smaller" android:textColor="@color/text_color_hint" android:gravity="center_vertical" android:id="@+id/dynamicPublishTime" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1"/>
+        <ImageButton android:id="@+id/dynamic_comment" android:background="@null" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/comment_icon" android:scaleType="center"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_color_hint" android:gravity="center_vertical" android:id="@+id/tvCommentNum" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <ImageButton android:id="@+id/dynamic_like" android:background="@null" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="35dp" android:src="@drawable/topic_dynamic_dislike" android:scaleType="center"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_color_hint" android:gravity="center_vertical" android:id="@+id/tvAppreciateNum" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="16dp"/>
+    </LinearLayout>
+</LinearLayout>

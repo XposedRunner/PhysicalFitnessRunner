@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+    <LinearLayout android:orientation="vertical" android:id="@+id/headerLayout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@+id/iv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34.5dp" android:layout_marginRight="15dp" android:src="@mipmap/img_back" android:layout_marginEnd="15dp"/>
+        <TextView android:textSize="@dimen/t_25" android:textStyle="bold" android:textColor="@color/text_color_major" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="17.5dp" android:text="@string/school_list" android:layout_marginStart="25dp"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="8dp" android:text="@string/txt_choose_school" android:layout_marginStart="25dp"/>
+        <View android:background="@color/choose_school_line" android:layout_marginTop="25dp" style="@style/horizontal_line"/>
+        <RelativeLayout android:id="@+id/rl_search_school" android:background="@drawable/choose_school_edit_bg" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_school" android:drawableLeft="@mipmap/icon_search" android:drawablePadding="7.5dp" android:layout_centerInParent="true" android:drawableStart="@mipmap/icon_search"/>
+        </RelativeLayout>
+        <View android:background="@color/choose_school_line" style="@style/horizontal_line"/>
+    </LinearLayout>
+    <se.emilsjolander.stickylistheaders.StickyListHeadersListView android:id="@+id/school_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@color/transparent" android:divider="@null" android:dividerHeight="0dp" android:layout_below="@+id/headerLayout"/>
+    <com.zjwh.android_wh_physicalfitness.view.MyLetterListView android:id="@+id/letterListView" android:layout_width="15dp" android:layout_height="match_parent" android:layout_marginTop="25dp" android:layout_marginBottom="30dp" android:layout_below="@+id/headerLayout" android:layout_alignParentRight="true"/>
+</RelativeLayout>

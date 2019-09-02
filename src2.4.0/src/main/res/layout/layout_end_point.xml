@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="@dimen/s_23" android:layout_height="@dimen/s_25">
+    <View android:background="@drawable/shadow_circle_black" android:layout_width="@dimen/s_23" android:layout_height="@dimen/s_23" android:layout_marginTop="@dimen/s_1_5"/>
+    <ImageView android:id="@+id/iv_icon" android:background="@drawable/bgwhite" android:padding="@dimen/s_1_5" android:layout_width="@dimen/s_23" android:layout_height="@dimen/s_23"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/iv_offline" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/img_offline"/>
+</FrameLayout>

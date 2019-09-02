@@ -1,0 +1,68 @@
+package defpackage;
+
+/* compiled from: Constant */
+/* renamed from: gf */
+public class gf {
+    public static int O000000o = 30000;
+    public static int O00000Oo = 30000;
+    public static int O00000o = 6;
+    public static int O00000o0 = 5;
+    public static int O00000oO = 10;
+    public static int O00000oo = 11;
+    public static int O0000O0o = 12;
+    public static int O0000OOo = 13;
+    public static int O0000Oo = 1;
+    public static int O0000Oo0 = 7;
+    public static int O0000OoO = 2;
+    public static int O0000Ooo = 3;
+    public static double O0000o = 2.11d;
+    public static int O0000o0 = 0;
+    public static int O0000o00 = 4;
+    public static int O0000o0O = 1;
+    public static String O0000o0o = "400 800 9198";
+    public static int O0000oO = 30;
+    public static double O0000oO0 = 10.01d;
+    public static int O0000oOO = 0;
+    public static int O0000oOo = 1;
+    public static final int O0000oo = 10000;
+    public static String[] O0000oo0 = new String[]{"/boot/android/android/system/priv-app/com.bluestacks.BstCommandProcessor.apk", "/boot/android/android/system/priv-app/com.bluestacks.bstfolder.apk", "/boot/android/android/system/priv-app/com.bluestacks.settings.apk", "/mnt/sdcard/Android/data/com.bluestacks.home", "/mnt/sdcard/Android/data/com.bluestacks.settings", "/system/priv-app/com.bluestacks.settings.apk", "/system/priv-app/com.bluestacks.BstCommandProcessor.apk", "/system/priv-app/com.bluestacks.bstfolder.apk", "/data/data/com.tiantian.ime", "/mnt/shared/TianTian/TianTian.ini", "/system/priv-app/TianTianLauncher.apk", "/system/priv-app/TianTianIME.apk", "/system/priv-app/TianTianServer.apk", "/data/data/com.bignox.app.store.hd/files/NoxPayAssets.apk", "/data/data/NoxHelp(cn).apk", "/data/property/persist.nox.gps.latitude", "/data/property/persist.nox.gps.longitude", "/data/property/persist.nox.gps.status", "/system/lib/libnoxspeedup.so"};
+    public static final int O0000ooO = 10001;
+    public static final int O0000ooo = 10002;
+    public static final int O000O00o = 20000;
+    public static final int O000O0OO = 40000;
+    public static final int O000O0Oo = 40001;
+    public static final int O000O0o = 50000;
+    public static final int O000O0o0 = 40003;
+    public static final int O000O0oO = 60000;
+    public static final int O000O0oo = 60001;
+    public static final int O000OO = 70000;
+    public static final int O000OO00 = 60002;
+    public static final int O000OO0o = 60003;
+    public static final int O000OOOo = 90000;
+    public static final int O000OOo = 100001;
+    public static final int O000OOo0 = 100000;
+    public static final int O000OOoO = 100002;
+    public static final int O000OOoo = 110000;
+    public static final int O000Oo0 = 110002;
+    public static final int O000Oo00 = 110001;
+    public static final int O000Oo0O = 120000;
+    public static final String O000Oo0o = "_load";
+    public static final String O000OoO = "_jump";
+    public static final String O000OoO0 = "_success";
+    public static final String O000OoOO = "_iydsj";
+    public static final String O000OoOo = "find_module_index";
+    public static final String O000Ooo = "more";
+    public static final String O000Ooo0 = "dynamic_module_index";
+    public static final String O000OooO = "hock_running";
+    public static final String O000Oooo = "hock_upload";
+    public static final String O000o0 = "bztk";
+    public static final String O000o00 = "exposure_";
+    public static final String O000o000 = "commerce_module_index";
+    public static final String O000o00O = "click_";
+    public static final String O000o00o = "close_";
+    public static final String O000o0O0 = "sjcj";
+    public static final String O00O0Oo = "_click";
+    public static final int O00oOoOo = 40002;
+    public static final int O00oOooO = 10003;
+    public static final int O00oOooo = 10004;
+}

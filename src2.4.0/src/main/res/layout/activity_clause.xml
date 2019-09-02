@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="67dp">
+            <TextView android:textSize="@dimen/t_25" android:textStyle="bold" android:textColor="@color/text_color_major" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/s_15" android:text="@string/txt_clause"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/s_15" android:layout_marginTop="11dp" android:text="@string/company"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_normal" android:id="@+id/tv_clause" android:paddingBottom="@dimen/s_35" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/s_15" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/s_15"/>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/s_70">
+        <ImageView android:id="@+id/iv_cancel" android:layout_width="@dimen/s_40" android:layout_height="@dimen/s_40" android:layout_marginTop="@dimen/s_22" android:layout_marginRight="@dimen/s_2" android:src="@mipmap/img_back" android:scaleType="centerInside" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

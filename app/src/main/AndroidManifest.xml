@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zjwh.android_wh_physicalfitness_runner">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PhysicalFitnessRunner"
+        android:supportsRtl="true">
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="运动世界校园辅助模块（无UI）" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="54" />
+    </application>
+</manifest>

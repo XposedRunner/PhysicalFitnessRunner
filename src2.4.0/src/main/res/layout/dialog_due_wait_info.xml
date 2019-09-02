@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/translucent87" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="right" android:id="@+id/ivClose" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/close"/>
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.2044"/>
+    <TextView android:textSize="20sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="约定终点跑步开始条件"/>
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.1333"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.倒计时结束，约跑将自动开始"/>
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:text="2.倒计时结束前，房主选择[立即开始]，约跑将立即开始"/>
+    </LinearLayout>
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.6219"/>
+</LinearLayout>

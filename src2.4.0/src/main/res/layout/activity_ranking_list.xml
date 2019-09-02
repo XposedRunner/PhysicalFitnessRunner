@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <android.support.design.widget.TabLayout android:id="@+id/tabLayout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="44dp" android:layout_below="@+id/layout_title" app:tabGravity="0" app:tabIndicatorColor="@color/sport_green" app:tabIndicatorHeight="2dp" app:tabMaxWidth="0dp" app:tabMode="1" app:tabSelectedTextColor="@color/sport_green" app:tabTextColor="@color/text_color_hint"/>
+    <android.support.v4.view.ViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tabLayout"/>
+    <View android:background="@drawable/shadow_down" android:layout_width="match_parent" android:layout_height="51dp" android:layout_below="@+id/tabLayout"/>
+</RelativeLayout>

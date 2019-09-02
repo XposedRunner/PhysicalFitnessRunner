@@ -1,0 +1,60 @@
+package com.amap.api.maps.model;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.URL;
+
+public abstract class UrlTileProvider implements TileProvider {
+    private final int height;
+    private final int width;
+
+    public UrlTileProvider(int i, int i2) {
+        this.width = i;
+        this.height = i2;
+    }
+
+    private static long a(InputStream inputStream, OutputStream outputStream) throws IOException {
+        byte[] bArr = new byte[4096];
+        long j = 0;
+        while (true) {
+            int read = inputStream.read(bArr);
+            if (read == -1) {
+                return j;
+            }
+            outputStream.write(bArr, 0, read);
+            j += (long) read;
+        }
+    }
+
+    private static byte[] a(InputStream inputStream) throws IOException {
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        a(inputStream, byteArrayOutputStream);
+        return byteArrayOutputStream.toByteArray();
+    }
+
+    public final Tile getTile(int i, int i2, int i3) {
+        URL tileUrl = getTileUrl(i, i2, i3);
+        if (tileUrl == null) {
+            return NO_TILE;
+        }
+        Tile obtain;
+        try {
+            obtain = Tile.obtain(this.width, this.height, a(tileUrl.openStream()));
+        } catch (IOException unused) {
+            obtain = NO_TILE;
+        }
+        return obtain;
+    }
+
+    public int getTileHeight() {
+        return this.height;
+    }
+
+    public abstract URL getTileUrl(int i, int i2, int i3);
+
+    public int getTileWidth() {
+        return this.width;
+    }
+}

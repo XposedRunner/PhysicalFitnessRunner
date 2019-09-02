@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.zjwh.android_wh_physicalfitness.view.PagerSlidingTabStrip android:id="@+id/tabs" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="45dp" app:indicatorColors="@color/sport_green" app:indicatorStrokeWidth="2dp" app:shouldExpand="true" app:tabPaddingLeftRight="0dp" app:tabTextColor="@color/text_color_hint" app:tabTextColorHighlight="@color/text_color_black" app:tabTextScale="1" app:tabTextSize="@dimen/text_size_bigger" app:tabTextTranslationY="2dp" app:type="3"/>
+    <View style="@style/horizontal_line"/>
+</LinearLayout>

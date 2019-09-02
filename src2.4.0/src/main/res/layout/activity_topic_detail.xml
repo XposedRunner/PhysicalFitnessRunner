@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/coordinatorLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay2" android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+        <android.support.design.widget.CollapsingToolbarLayout android:id="@+id/toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp" app:contentScrim="@color/transparent" app:layout_scrollFlags="13">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.zjwh.android_wh_physicalfitness.view.banner.AspectRatioView android:id="@+id/dynamic_iv_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:aspectRatio="1.8">
+                    <ImageView android:id="@+id/topic_detail_iv" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:contentDescription="@string/app_name"/>
+                    <View android:background="@color/translucent40" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/white" android:ellipsize="middle" android:gravity="center_horizontal" android:id="@+id/topic_detail_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:singleLine="true"/>
+                        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/topic_detail_sub_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+                </com.zjwh.android_wh_physicalfitness.view.banner.AspectRatioView>
+                <com.ms.square.android.expandabletextview.ExpandableTextView android:id="@+id/expand_text_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:animDuration="200" app:collapseDrawable="@drawable/topic_expand_icon" app:expandDrawable="@drawable/topic_collapse_icon" app:maxCollapsedLines="4">
+                    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_sub_major" android:id="@+id/expandable_text" android:paddingLeft="16dp" android:paddingTop="17dp" android:paddingRight="16dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4dp"/>
+                    <ImageButton android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/expand_collapse" android:background="@null" android:paddingLeft="25dp" android:paddingRight="25dp" android:paddingBottom="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </com.ms.square.android.expandabletextview.ExpandableTextView>
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <View style="@style/horizontal_line"/>
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="44dp">
+            <TextView android:textSize="@dimen/text_size_bigger" android:textColor="@color/text_color_sub_major" android:gravity="center" android:id="@+id/topic_tab_left_tv" android:layout_width="0dp" android:layout_height="match_parent" android:text="热门" android:layout_weight="1"/>
+            <com.zjwh.android_wh_physicalfitness.view.DividerView android:background="@color/window_background" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="12dp" android:layout_marginBottom="12dp"/>
+            <TextView android:textSize="@dimen/text_size_bigger" android:textColor="@color/text_color_hint" android:gravity="center" android:id="@+id/topic_tab_middle_tv" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/txt_all" android:layout_weight="1"/>
+            <com.zjwh.android_wh_physicalfitness.view.DividerView android:background="@color/window_background" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="12dp" android:layout_marginBottom="12dp"/>
+            <TextView android:textSize="@dimen/text_size_bigger" android:textColor="@color/text_color_hint" android:gravity="center" android:id="@+id/topic_tab_right_tv" android:layout_width="0dp" android:layout_height="match_parent" android:text="同校" android:layout_weight="1"/>
+        </LinearLayout>
+        <View style="@style/horizontal_line"/>
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/layout_top_bar"/>
+    <FrameLayout android:id="@+id/body_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</android.support.design.widget.CoordinatorLayout>

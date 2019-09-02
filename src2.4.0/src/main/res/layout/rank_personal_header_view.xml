@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/rank_personal_shadow" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp">
+        <ImageView android:id="@+id/ivHeadIcon" android:background="@drawable/white_circle" android:padding="0.5dp" android:layout_width="28dp" android:layout_height="28dp"/>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/white" android:id="@+id/tvHeadTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout android:id="@+id/loading_empty_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rl_btn" android:layout_below="@+id/layout_title">
+        <android.support.v4.widget.NestedScrollView android:scrollbarStyle="outsideOverlay" android:id="@+id/scrollView" android:background="@color/white" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="15dp" android:paddingTop="25dp" android:paddingRight="15dp" android:paddingBottom="25dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="22.5sp" android:textColor="@color/text_color_major" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="8dp"/>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/tv_author" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/tv_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_normal" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:lineSpacingExtra="4dp"/>
+                <ImageView android:id="@+id/iv_img" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:scaleType="centerInside"/>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.zjwh.android_wh_physicalfitness.view.LoadingEmptyLayout>
+    <View android:id="@+id/bottomLine" android:background="@drawable/shadow_up" android:layout_width="match_parent" android:layout_height="51dp" android:layout_above="@+id/rl_btn"/>
+    <RelativeLayout android:id="@+id/rl_btn" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/btn_order" android:text="点击预约" style="@style/SW.Button.Bottom"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_below="@+id/btn_order"/>
+    </RelativeLayout>
+</RelativeLayout>

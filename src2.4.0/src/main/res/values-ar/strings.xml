@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">التنقل إلى الشاشة الرئيسية</string>
+    <string name="abc_action_bar_home_description_format">%1$s، %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s، %2$s، %3$s</string>
+    <string name="abc_action_bar_up_description">التنقل إلى أعلى</string>
+    <string name="abc_action_menu_overflow_description">خيارات إضافية</string>
+    <string name="abc_action_mode_done">تم</string>
+    <string name="abc_activity_chooser_view_see_all">عرض الكل</string>
+    <string name="abc_activitychooserview_choose_application">اختيار تطبيق</string>
+    <string name="abc_capital_off">إيقاف</string>
+    <string name="abc_capital_on">تشغيل</string>
+    <string name="abc_search_hint">بحث…</string>
+    <string name="abc_searchview_description_clear">محو طلب البحث</string>
+    <string name="abc_searchview_description_query">طلب البحث</string>
+    <string name="abc_searchview_description_search">بحث</string>
+    <string name="abc_searchview_description_submit">إرسال طلب البحث</string>
+    <string name="abc_searchview_description_voice">البحث الصوتي</string>
+    <string name="abc_shareactionprovider_share_with">مشاركة مع</string>
+    <string name="abc_shareactionprovider_share_with_application">‏مشاركة مع %s</string>
+    <string name="abc_toolbar_collapse_description">تصغير</string>
+    <string name="gt3_geetest_analyzing">جارِ التحقق...</string>
+    <string name="gt3_geetest_checking">جارِ التحقق</string>
+    <string name="gt3_geetest_click">انقر لإتمام التحقق</string>
+    <string name="gt3_geetest_closed">لقد أُلغي رمز التحقق</string>
+    <string name="gt3_geetest_http_error">خطأ</string>
+    <string name="gt3_geetest_http_timeout">انتهت المهلة</string>
+    <string name="gt3_geetest_pass">أكملت العملية بنجاح</string>
+    <string name="gt3_geetest_please_verify">غير مكتمل</string>
+    <string name="gt3_geetest_success">أكملت العملية بنجاح</string>
+    <string name="gt3_geetest_support">مدعوم بواسطة Geetest</string>
+    <string name="gt3_geetest_try_again">إعادة المحاولة</string>
+    <string name="search_menu_title">البحث</string>
+    <string name="status_bar_notification_info_overflow">+999</string>
+</resources>

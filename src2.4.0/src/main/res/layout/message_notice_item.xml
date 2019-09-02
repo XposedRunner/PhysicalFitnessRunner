@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/shadow_corners_radius_bg" android:paddingLeft="20dp" android:paddingTop="16dp" android:paddingRight="20dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+    <ImageView android:id="@+id/notice_iv" android:layout_width="74dp" android:layout_height="74dp" android:scaleType="centerCrop"/>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp">
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_black" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/notice_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-2dp" android:singleLine="true" android:drawablePadding="5dp"/>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_label" android:ellipsize="end" android:id="@+id/notice_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:minHeight="32dp" android:maxLines="2" android:layout_below="@+id/notice_title" android:lineSpacingExtra="2dp"/>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_color_hint" android:id="@+id/notice_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>
